@@ -18,11 +18,24 @@ export const styles = theme => ({
     slideItem: {
         display: 'flex',
         justifyContent: 'stretch',
-        paddingBottom: 25
+        paddingBottom: 25,
+        ['@media (max-width:760px)']: {
+            flexDirection: 'column',
+            alignItems: 'center'
+        },
     },
     slideImage: {
         marginRight: 25,
-        flex: 1
+        flex: 1,
+        ['@media (max-width:760px)']: {
+            marginRight: 0,
+            marginBottom: 40
+        },
+        '& img':{
+            ['@media (max-width:460px)']: {
+                maxWidth: '100%'
+            },
+        }
     },
     slideInfo: {
         padding: '8px 0 25px 0',
@@ -40,7 +53,8 @@ export const styles = theme => ({
         textAlign: 'center'
     },
     cardName: {
-        marginRight: 'auto'
+        marginRight: 'auto',
+        ...theme.highlightedText
     },
     slideReview: {
         display: 'flex',
@@ -61,6 +75,12 @@ export const styles = theme => ({
     descItem: {
         padding: '0 55px 0 25px',
         borderRight: '2px solid #E4E6EE',
+        ['@media (max-width:900px)']: {
+            padding: '0 10px'
+        },
+        ['@media (max-width:460px)']: {
+            width: '33.333%'
+        },
         '&:first-child': {
             paddingLeft: 0
         },
@@ -82,7 +102,10 @@ export const styles = theme => ({
         ...theme.secondaryRegularText
     },
     highlightedText: {
-        ...theme.highlightedText
+        ...theme.highlightedText,
+        ['@media (max-width:760px)']: {
+            fontSize: 13
+        },
     },
     explore: {
         display: 'block',

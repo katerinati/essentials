@@ -5,10 +5,12 @@ export const styles = theme => ({
         fontSize: 0,
         textAlign: 'center',
         position: 'relative',
-        marginTop: 45
+        marginTop: 45,
+        maxWidth: 655,
+        width: '100%'
     },
     chartElement: {
-        width: 127,
+        width: 'calc( 20% - 4px )',
         height: 8,
         borderRadius: 12,
         display:' inline-block',

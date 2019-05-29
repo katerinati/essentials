@@ -15,7 +15,7 @@ export class ReportDetails extends Component {
         return(
             <div>
                 { reports.map( (report, i) =>
-                    <Paper className={classes.detailsWrapp} key={i}>
+                    <Paper className={classes.detailsWrap} key={i}>
                         <RatingChart sectionTitle={report.detailTile}
                                      sectionValue={report.detailValue}
                                      detailStatus={report.detailStatus}

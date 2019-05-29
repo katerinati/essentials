@@ -3,11 +3,31 @@ export const styles = theme => ({
         marginTop: 35,
         backgroundColor: '#fff',
         boxShadow: ' 0px 15px 60px rgba(40, 74, 253, 0.1), 0px 10px 15px rgba(5, 7, 19, 0.03)',
-        borderRadius: 6
+        borderRadius: 6,
+        ['@media (max-width:740px)']: {
+            marginLeft: 90,
+            overflow: 'visible',
+            position: 'relative',
+            '&:before': {
+                content: '"Swipe to explore"',
+                position: 'absolute',
+                ...theme.regularText,
+                color: '#C3C8CF',
+                maxWidth: 60,
+                left: -90,
+                top: 'calc(50% - 16px)'
+            }
+        }
+
     },
     tabNavigationFlex: {
         minHeight: 120,
-
+        ['@media (max-width:960px)']: {
+            justifyContent: 'space-between'
+        },
+        ['@media (max-width:740px)']: {
+            overflowX: 'scroll',
+        },
     },
     indicator: {
         backgroundColor: theme.general.DefaultActiveColor,

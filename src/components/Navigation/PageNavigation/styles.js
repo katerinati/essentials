@@ -2,6 +2,9 @@ export const styles = theme =>({
     pageNavigation: {
         minHeight: 75,
         borderBottom: '1px solid #E4E6EE',
+        ['@media (max-width:740px)']: {
+            overflowX: 'scroll'
+        },
     },
     indicator: {
         backgroundColor: theme.general.DefaultActiveColor,

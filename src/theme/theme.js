@@ -65,7 +65,8 @@ export const theme = createMuiTheme({
 
     container: {
         maxWidth: 990,
-        margin: '0 auto'
+        margin: '0 auto',
+        padding: '0 20px'
     },
 
     primaryRegularText: {

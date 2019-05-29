@@ -68,7 +68,7 @@ export class CardSlider extends Component {
 
         return(
             <section className={classes.cardSlider}>
-                <SwipeableViews index={slide} animateHeight={true}>
+                <SwipeableViews index={slide} >
                     { this.renderSlideData()}
                 </SwipeableViews>
 

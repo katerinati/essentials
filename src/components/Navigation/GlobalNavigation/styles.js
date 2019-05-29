@@ -7,9 +7,12 @@ export const styles = theme => ({
         boxShadow: 'none',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: '0 20px'
+        padding: '0 20px',
+        ['@media (max-width:600px)']: {
+            padding: 20
+        }
     },
-    menuWrapp : {
+    menuWrap : {
         minHeight : 80
     },
     indicator: {
@@ -30,4 +33,27 @@ export const styles = theme => ({
     selected: {
         color: theme.general.TextPrimaryColor
     },
+    mobileMenuWrap: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'inherit',
+        width: 'calc( 100% - 55px )'
+    },
+    desktopNav:{
+        flex: '0 0 70%',
+        display: 'flex',
+        justifyContent: 'inherit',
+        ['@media (max-width:600px)']: {
+            flex: '0 0 calc( 100% - 55px )',
+        }
+    },
+    siteLogo:{
+        flex: '0 0 30%',
+        ['@media (max-width:600px)']: {
+            flex: '0 0 55px',
+        }
+    },
+    currentPage: {
+        ...theme.primaryRegularText
+    }
 });
