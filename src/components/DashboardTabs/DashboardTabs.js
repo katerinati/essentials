@@ -26,7 +26,7 @@ export default class DashboardTabs extends Component {
             <section className={classes.detailsData}>
                 <TabSwitcher onTabChange={this.handleTabChange} value={view}/>
 
-                <SwipeableViews index={view} animateHeight={true}>
+                <SwipeableViews index={view}>
                     <ReportDetails reports={reports} />
                     <DataDetails reportDataDetail={reportDataDetail} />
                 </SwipeableViews>

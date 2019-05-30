@@ -19,7 +19,7 @@ export class SlideSwitcher extends Component {
         const { onSlideChange, value, classes } = this.props;
 
         return (
-            <div>
+            <div className={classes.sliderSwitcherWrap}>
                 <AppBar position="static" color="default" className={classes.sliderSwitcher}>
                     <Tabs
                         value={value}

@@ -51,5 +51,21 @@ export const styles = theme => ({
         color: '#C3C8CF',
         fontFamily: theme.general.HeeboFont
 
+    },
+    factorDetails: {
+        marginTop: 25,
+        display: 'flex',
+        justifyContent: 'center',
+    },
+    link: {
+        ...theme.regularText,
+        textTransform: 'uppercase',
+        display: 'flex',
+        alignItems: 'center',
+        transition: 'text-shadow 0.2s ease',
+        '&:hover': {
+            textShadow: '2px 3px 6px #4286F5',
+            textDecoration: 'none'
+        }
     }
 });

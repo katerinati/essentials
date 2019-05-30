@@ -27,6 +27,7 @@ export const styles = theme => ({
         },
         ['@media (max-width:740px)']: {
             overflowX: 'scroll',
+            minHeight: 100,
         },
     },
     indicator: {

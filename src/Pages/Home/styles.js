@@ -1,9 +1,9 @@
 export const styles = theme => ({
     creditCardChart: {
-        marginTop: 30,
+        marginTop: 15,
         maxWidth: 460,
         margin: '0 auto',
-        paddingBottom: 55,
+        paddingBottom: 40,
         borderBottom: '2px solid #E3E9F1',
         marginBottom: 35
     },
@@ -11,7 +11,7 @@ export const styles = theme => ({
         height: 0
     },
     detailsData: {
-        marginBottom: 30
+        margin: '0 -10px 30px -10px'
     },
     cardSlider: {
         marginBottom: 50

@@ -1,4 +1,11 @@
 export const styles = theme => ({
+    cardSlider: {
+      borderTop: '2px solid #E3E9F1',
+      position: 'relative',
+    },
+    sliderTitle:{
+        margin: '25px 0 15px'
+    },
     hsbc: {
         backgroundColor: '#DB0011'
 
@@ -12,10 +19,12 @@ export const styles = theme => ({
         borderRadius: 4,
         marginRight: 15
     },
-    slideDescription: {
-
+    descTooltip: {
+        display: 'inline-block',
+        marginLeft: 5
     },
     slideItem: {
+        marginTop: 40,
         display: 'flex',
         justifyContent: 'stretch',
         paddingBottom: 25,
@@ -45,7 +54,10 @@ export const styles = theme => ({
         marginBottom: 10,
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        ['@media (max-width:460px)']: {
+            justifyContent: 'center',
+        },
     },
     withIcon: {
         margin: '25px 0',
@@ -54,23 +66,32 @@ export const styles = theme => ({
     },
     cardName: {
         marginRight: 'auto',
-        ...theme.highlightedText
+        ...theme.highlightedText,
+        ['@media (max-width:460px)']: {
+            marginRight: 'unset'
+        },
     },
     slideReview: {
         display: 'flex',
         alignItems: 'center',
-        marginBottom: 30
+        marginBottom: 30,
+        ['@media (max-width:460px)']: {
+            justifyContent: 'center',
+        },
     },
     reviewInfo: {
         marginLeft: 10,
         ...theme.regularText,
-        color: theme.general.DefaultActiveColor
+        color: theme.general.DefaultActiveColor,
     },
     saveItem: {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        ...theme.secondaryRegularText
+        ...theme.secondaryRegularText,
+        ['@media (max-width:460px)']: {
+            display: 'none'
+        },
     },
     descItem: {
         padding: '0 55px 0 25px',
@@ -94,7 +115,8 @@ export const styles = theme => ({
         justifyContent: 'stretch',
     },
     descInfo: {
-        display: 'block',
+        display: 'flex',
+        alignItems: 'center',
         marginBottom: 5,
         '&:last-child': {
             marginBottom: 0

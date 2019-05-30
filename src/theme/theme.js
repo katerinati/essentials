@@ -82,6 +82,23 @@ export const theme = createMuiTheme({
         fontFamily: HeeboFont,
         color: TextSecondaryColor,
         fontSize: 13,
+        lineHeight: 1.2,
+    },
+
+    secondaryMediumText: {
+        fontWeight: MediumFontWeight,
+        fontFamily: HeeboFont,
+        color: TextSecondaryColor,
+        fontSize: 13,
+        lineHeight: 1.2,
+    },
+
+    secondaryRegularTextDark: {
+        fontWeight: RegularFontWeight,
+        fontFamily: HeeboFont,
+        color: TextPrimaryColor,
+        fontSize: 13,
+        lineHeight: 1.2,
     },
 
     regularText : {
@@ -96,6 +113,31 @@ export const theme = createMuiTheme({
         fontFamily: HeeboFont,
         fontWeight: RegularFontWeight,
         lineHeight: 1.3
+    },
+
+    smallRegularText: {
+        fontSize: 11,
+        fontWeight: RegularFontWeight,
+        lineHeight: 1.1,
+        fontFamily: HeeboFont,
+    },
+
+    buttonMedium: {
+        backgroundColor: DefaultActiveColor,
+        boxShadow: '0px 10px 15px rgba(66, 134, 245, 0.25)',
+        borderRadius: 48,
+        padding: '15px 10px',
+        color: '#fff',
+        textAlign: 'center',
+        textTransform: 'uppercase',
+        maxWidth: 200,
+        width: '100%',
+        transition: 'opacity 0.2s ease-out',
+        '&:hover':{
+            backgroundColor: DefaultActiveColor,
+            opacity: 0.8
+        }
+
     }
 
 });

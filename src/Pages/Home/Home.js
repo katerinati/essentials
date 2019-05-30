@@ -15,6 +15,7 @@ import TabNavigation from "../../components/Navigation/TabNavigation";
 * */
 import { reports, reportDataDetail } from './_mockData';
 import { sliderMockData } from './_mockData';
+import InfoTooltip from "../../components/InfoTooltip";
 
 
 export class Home extends Component {
@@ -37,6 +38,7 @@ export class Home extends Component {
                 <TabNavigation/>
                 <TabTitle title={'Credit cards '}/>
                 <section className={classes.creditCardChart}>
+                    <InfoTooltip info={'Tooltip Text'}/>
                     <PieChart/>
                 </section>
                 <Chart chartTitle={'Credit cards usage'} />

@@ -6,6 +6,7 @@ export class ReportDetails extends Component {
 
     constructor(props) {
         super(props);
+
     }
 
     render () {
@@ -13,13 +14,14 @@ export class ReportDetails extends Component {
         const { reports, classes } = this.props;
 
         return(
-            <div>
+            <div className={classes.tabWrap}>
                 { reports.map( (report, i) =>
                     <Paper className={classes.detailsWrap} key={i}>
                         <RatingChart sectionTitle={report.detailTile}
                                      sectionValue={report.detailValue}
                                      detailStatus={report.detailStatus}
                                      detailStatusValue={report.detailStatusValue}
+
                         />
                     </Paper>
                 ) }

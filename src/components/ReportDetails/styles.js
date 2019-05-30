@@ -7,6 +7,12 @@ export const styles = theme => ({
         borderRadius: 6,
         '&:last-child' : {
             marginBottom: 0
+        },
+        ['@media (max-width:640px)']: {
+            padding: '20px 30px'
         }
+    },
+    tabWrap: {
+        padding: '25px 10px'
     }
 })

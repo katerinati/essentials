@@ -4,6 +4,7 @@ export const styles = theme => ({
         fontSize: 18,
         lineHeight: '24px',
         marginBottom: 10,
+        fontWeight: 500
 
     },
     cardChartDesc: {

@@ -8,6 +8,8 @@ export const styles = theme => ({
 
     },
     chartWrap: {
-        overflowX: 'scroll',
+        ['@media (max-width:1024px)']: {
+            overflowX: 'scroll',
+        },
     }
 });

@@ -4,7 +4,10 @@ export const styles = theme => ({
     factorStep: {
         backgroundImage: `url(${affordabilityFactorImg})`,
         backgroundPosition: 'bottom right',
-        backgroundRepeat: 'no-repeat'
+        backgroundRepeat: 'no-repeat',
+        ['@media (max-width:560px)']: {
+            backgroundSize: '100%'
+        }
     },
     factorLink: {
         justifyContent: 'center',

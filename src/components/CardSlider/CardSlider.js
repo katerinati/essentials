@@ -8,6 +8,8 @@ import classNames from 'classnames';
 import CustomLink from "../CustomLink";
 import {EyeIcon} from "../Icons/Eye";
 import HSBD from '../../resources/images/hsbc.png';
+import TabTitle from "../../components/Title";
+import InfoTooltip from "../InfoTooltip";
 
 export class CardSlider extends Component {
 
@@ -52,7 +54,7 @@ export class CardSlider extends Component {
                         </div>
                         <div className={classes.descItem}>
                             <span className={classNames(classes.descInfo)}>Cost to you</span>
-                            <span className={classNames(classes.highlightedText, classes.descInfo)}>{slide.costTo.cost}</span>
+                            <span className={classNames(classes.highlightedText, classes.descInfo)}>{slide.costTo.cost} <InfoTooltip className={classes.descTooltip} info={'Cost info'}/></span>
                             <span className={classNames(classes.descInfo)}>Balance repaid in {slide.costTo.balanceRepaid} month</span>
                         </div>
                     </div>
@@ -68,6 +70,10 @@ export class CardSlider extends Component {
 
         return(
             <section className={classes.cardSlider}>
+                <TabTitle title={'Suggested for your credit '} className={classes.sliderTitle}/>
+
+                <InfoTooltip info={'Simple info'}/>
+
                 <SwipeableViews index={slide} >
                     { this.renderSlideData()}
                 </SwipeableViews>
