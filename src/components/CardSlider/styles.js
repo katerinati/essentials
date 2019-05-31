@@ -42,7 +42,7 @@ export const styles = theme => ({
         },
         '& img':{
             ['@media (max-width:460px)']: {
-                maxWidth: '100%'
+                maxWidth: 205
             },
         }
     },

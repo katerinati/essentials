@@ -9,7 +9,7 @@ export const styles = theme => ({
         borderTop : '2px solid #E4E6EE',
         display: 'flex',
         alignItems: 'stretch',
-        textAlign: 'justify',
+        textAlign: 'left',
         ['@media (max-width:680px)']: {
             flexDirection: 'column'
         }
@@ -17,6 +17,7 @@ export const styles = theme => ({
     footerInfo: {
         flex: '0 0 50%',
         marginLeft: 'auto',
+        lineHeight: 1.2,
         ['@media (max-width:680px)']: {
             order: 1,
             flex: '0 0 100%',
@@ -27,7 +28,7 @@ export const styles = theme => ({
         alignItems: 'flex-start',
         justifyContent: 'flex-start',
         flexDirection: 'column',
-        flex: '0 0 30%',
+        flex: '0 0 33%',
         '& a': {
             padding: 0,
             display: 'block',

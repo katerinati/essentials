@@ -19,10 +19,10 @@ export class Footer extends Component{
 
         const links = [
             { src: "/", title: 'About Us'},
-            { src: "/", title: 'Blog'},
-            { src: "/", title: 'Terms & Conditions'},
             { src: "/", title: 'Privacy policy'},
+            { src: "/", title: 'Blog'},
             { src: "/", title: 'Faq'},
+            { src: "/", title: 'Terms & Conditions'},
             { src: "/", title: 'Contact us'}
         ];
 

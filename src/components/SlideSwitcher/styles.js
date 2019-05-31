@@ -48,8 +48,11 @@ export const styles = theme => ({
     sliderSwitcherWrap: {
         ['@media (max-width:600px)']: {
             position: 'absolute',
-            top: '50%',
+            top: 'calc(50% + 20px)',
             left: 'calc( 50% - 16px )'
+        },
+        ['@media (max-width:460px)']: {
+            top: 'calc(50% - 20px)',
         }
     }
 });
