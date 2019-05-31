@@ -3,7 +3,7 @@ export const reports = [
         'detailTile' : 'Credit cards',
         'detailValue' : '24%',
         'detailStatus' : 'Good',
-        'detailStatusValue' : '65',
+        'detailStatusValue' : '69',
         'factorDetails' : [
             {
                 'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
@@ -16,7 +16,7 @@ export const reports = [
         'detailTile' : 'Total credit limit',
         'detailValue' : '£ 69,360',
         'detailStatus' : 'Fair',
-        'detailStatusValue' : '50',
+        'detailStatusValue' : '49',
         'factorDetails' : [
             {
                 'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
@@ -29,7 +29,7 @@ export const reports = [
         'detailTile' : 'Cash withdrawals',
         'detailValue' : 'None',
         'detailStatus' : 'Excellent',
-        'detailStatusValue' : '98',
+        'detailStatusValue' : '89',
         'factorDetails' : [
             {
                 'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
@@ -42,7 +42,7 @@ export const reports = [
         'detailTile' : 'Exceeded limit',
         'detailValue' : '5',
         'detailStatus' : 'Poor',
-        'detailStatusValue' : '30',
+        'detailStatusValue' : '29',
         'factorDetails' : [
             {
                 'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',

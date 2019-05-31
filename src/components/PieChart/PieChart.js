@@ -70,7 +70,7 @@ export class PieChart extends Component {
                     height="300"
                 />
                 <div className={classes.pieDesc}>
-                    <Typography className={classes.cardChartInfo} align="center">Your credit card balances look pretty pretty high </Typography>
+                    <Typography className={classes.cardChartInfo} align="center">Your credit card balances look pretty high </Typography>
                     <Typography className={classes.cardChartDesc} align="center">A good rule of thumb is to keep your balances below 30% of your limit </Typography>
                 </div>
 

@@ -25,8 +25,8 @@ export class TabSwitcher extends Component {
                             indicator: classes.indicator,
                         }}
                     >
-                        <Tab label="Rating" classes={{selected: classes.selected}} className={classes.tab}/>
-                        <Tab label="Data" classes={{selected: classes.selected}} className={classes.tab}/>
+                        <Tab label="Lender rating" classes={{selected: classes.selected, wrapper: classes.labelWrap}} className={classes.tab}/>
+                        <Tab label="my data" classes={{selected: classes.selected, wrapper: classes.labelWrap}} className={classes.tab}/>
                     </Tabs>
                 </AppBar>
             </div>

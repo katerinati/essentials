@@ -4,7 +4,7 @@ export const styles = theme => ({
       position: 'relative',
     },
     sliderTitle:{
-        margin: '25px 0 15px'
+        margin: '25px 0 10px'
     },
     hsbc: {
         backgroundColor: '#DB0011'
@@ -27,14 +27,14 @@ export const styles = theme => ({
         marginTop: 40,
         display: 'flex',
         justifyContent: 'stretch',
-        paddingBottom: 25,
+        paddingBottom: 15,
         ['@media (max-width:760px)']: {
             flexDirection: 'column',
             alignItems: 'center'
         },
     },
     slideImage: {
-        marginRight: 25,
+        marginRight: 15,
         flex: 1,
         ['@media (max-width:760px)']: {
             marginRight: 0,
@@ -60,7 +60,7 @@ export const styles = theme => ({
         },
     },
     withIcon: {
-        margin: '25px 0',
+        margin: '0 0 25px',
         display: 'block',
         textAlign: 'center'
     },
@@ -94,7 +94,7 @@ export const styles = theme => ({
         },
     },
     descItem: {
-        padding: '0 55px 0 25px',
+        padding: '0 65px 0 25px',
         borderRight: '2px solid #E4E6EE',
         ['@media (max-width:900px)']: {
             padding: '0 10px'
@@ -132,6 +132,10 @@ export const styles = theme => ({
     explore: {
         display: 'block',
         textAlign: 'center',
-        marginBottom: 45
+        marginBottom: 40,
+        ['@media (max-width:600px)']: {
+            marginBottom: 30,
+            color: '#C3C8CF'
+        }
     }
 })

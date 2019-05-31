@@ -17,7 +17,7 @@ export class AccountNavigation extends Component {
             <div className={classes.userAccountSetting}>
                 <Typography className={classes.userAccountGreetings}>Hello, Joanne</Typography>
                 <UserAvatar/>
-                <ExpandMore/>
+                <ExpandMore className={classes.arrow}/>
             </div>
         );
     };

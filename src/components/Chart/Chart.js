@@ -5,22 +5,23 @@ import ChartTitle from "../../components/Title";
 
 
 const MockData = [
-    {"date":1558706082841,"value":59},
-    {"date":1558706202841,"value":60},
-    {"date":1558706322841,"value":54},
-    {"date":1558706442841,"value":62},
-    {"date":1558706562841,"value":52},
-    {"date":1558706682841,"value":50},
-    {"date":1558706802841,"value":69},
-    {"date":1558706922841,"value":67},
-    {"date":1558707042841,"value":56},
-    {"date":1558707162841,"value":51},
-    {"date":1558707282841,"value":53},
-    {"date":1558707402841,"value":60},
-    {"date":1558707522841,"value":56}
+    {"date":1521324000000,"value":55},
+    {"date":1523998800000,"value":58},
+    {"date":1526590800000,"value":60},
+    {"date":1529269200000,"value":67},
+    {"date":1531861200000,"value":69},
+    {"date":1534539600000,"value":68},
+    {"date":1537218000000,"value":60},
+    {"date":1539810000000,"value":66},
+    {"date":1542492000000,"value":68},
+    {"date":1545084000000,"value":67},
+    {"date":1547762400000,"value":66},
+    {"date":1550440800000,"value":60},
+    {"date":1552860000000,"value":59}
 ];
 
 const dateToYM = (date) => {
+
     let strArray=[
             "January", "February", "March",
             "April", "May", "June", "July",
@@ -65,12 +66,12 @@ export class Chart extends Component {
         const {chartTitle, classes} = this.props;
 
         return (
-            <div className={classes.creditCardChart}>
+            <section className={classes.LineChart}>
                 <ChartTitle title={chartTitle}/>
                 <div className={classes.chartWrap}>
 
-                        <LineChart width={990} height={225} data={MockData}
-                                   margin={{top: 65, right: 30, left: -25, bottom: 30}}
+                        <LineChart width={990} height={240} data={MockData}
+                                   margin={{top: 65, right: 30, left: -25, bottom: 35}}
                                    className={classes.lineChart}
                         >
                             <YAxis
@@ -78,8 +79,10 @@ export class Chart extends Component {
                                 tickLine={false}
                                 dataKey="value"
                                 type="number"
-                                domain={['dataMin', 'dataMax']}
+                                domain={['dataMin - 13', 'dataMax']}
                                 tickFormatter={tickFormaterY}
+                                tickCount={4}
+                                tickSize={8}
                             />
                             <XAxis
                                 axisLine={false}
@@ -88,23 +91,44 @@ export class Chart extends Component {
                                 type="number"
                                 domain={['dataMin', 'dataMax']}
                                 tickFormatter={tickFormater}
+                                tickCount={3}
+                                interval="preserveStartEnd"
+                                padding={{ left: 33, right: 33 }}
+                                tickSize={20}
+
+
                             />
                             <Tooltip
                                 formatter={tooltipValueFormatter}
                                 labelFormatter={tooltipLabelFormatter}
+                                labelStyle={{
+                                    fontSize: 13,
+                                    color: '#A1A6AE',
+                                    textAlign: 'center'
+                                }}
+                                contentStyle={{
+                                    border: 0,
+                                    boxShadow: '0px 15px 60px rgba(40, 74, 253, 0.1), 0px 10px 15px rgba(5, 7, 19, 0.03)',
+                                    borderRadius: 1,
+                                    width: 250
+                                }}
+                                itemStyle={{
+                                    fontSize: 13,
+                                    color: '#A1A6AE',
+                                    textAlign: 'center'
+                                }}
                             />
-                            <CartesianGrid vertical={false} strokeDasharray="3 3"/>
+                            <CartesianGrid vertical={false} strokeDasharray="8 9" />
                             <Line
-                                strokeWidth="4"
+                                strokeWidth="3"
                                 type="monotone"
                                 dataKey="value"
                                 stroke="#4286F5"
-                                dot={{r: 5 }} />
+                                dot={{r: 4 }} />
                             />
                         </LineChart>
                 </div>
-
-            </div>
+            </section>
         );
     }
 }

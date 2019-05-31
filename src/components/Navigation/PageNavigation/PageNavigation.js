@@ -34,7 +34,7 @@ export class PageNavigation extends Component {
 
                     }}
                 >
-                    { PageTabs.map( (tab, i) => <Tab classes={{selected: classes.selected}} className={classes.root} label={tab} key={i} />) }
+                    { PageTabs.map( (tab, i) => <Tab classes={{selected: classes.selected, wrapper: classes.tabLabel}} className={classes.root} label={tab} key={i} />) }
                     <FraudWatch />
                 </Tabs>
             </div>

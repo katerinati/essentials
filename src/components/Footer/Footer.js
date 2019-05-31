@@ -30,17 +30,17 @@ export class Footer extends Component{
         return (
             <footer className={classes.footer}>
                 <section className={classNames(classes.footerWrap, classes.container)}>
-                    <Typography color='textSecondary'>
+                    <div className={classes.bottomNavigation}>
+                        <FooterNavigation links={links} />
+                        <img src={footerLogo} className={classes.footerLogo} />
+                    </div>
+                    <Typography color='textSecondary' className={classes.footerInfo}>
                         Credibble Limited is registered in England and Wales with company number 09511750. Contact us at: Plexal, 14 East Bay Lane, The Press Centre,
                         Here East, Queen Elizabeth Olympic Park, Stratford, London E15 2GW. Credibble Limited is authorised and regulated by the Financial Conduct Authority under firm registration number (FRN) 713043.
                         Authorisation can be checked on the Financial Services Register at <CustomLink href={dudUrl} color="secondary" underline="always" > www.fca.org.uk </CustomLink>. Credibble Limited is registered with the Information Commissioners Office under registration reference ICOZA149590.
                         VAT registration number 236554009. Credibble Limited is a fully authorised Credit Information Services provider and Credit Broker. We use cookies to give you the best experience.
                         By using our website you agree to our use of cookies in accordance with our <CustomLink href={dudUrl} color="secondary" underline="always" className={classes.link}> cookie policy. </CustomLink>
                     </Typography>
-                    <div className={classes.bottomNavigation}>
-                        <img src={footerLogo} className={classes.footerLogo} />
-                        <FooterNavigation links={links} />
-                    </div>
                 </section>
             </footer>
         );

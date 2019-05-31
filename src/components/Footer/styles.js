@@ -1,31 +1,69 @@
 export const styles = theme => ({
     container : theme.container,
     footer : {
-        backgroundColor : '#FDFDFF'
+        backgroundColor : '#FDFDFF',
+        padding: '0 20px'
     },
     footerWrap : {
-        padding: '45px 20px',
+        padding: '22px 0',
         borderTop : '2px solid #E4E6EE',
         display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'flex-start',
-        textAlign: 'justify'
+        alignItems: 'stretch',
+        textAlign: 'justify',
+        ['@media (max-width:680px)']: {
+            flexDirection: 'column'
+        }
+    },
+    footerInfo: {
+        flex: '0 0 50%',
+        marginLeft: 'auto',
+        ['@media (max-width:680px)']: {
+            order: 1,
+            flex: '0 0 100%',
+        }
     },
     bottomNavigation: {
-        marginTop: 55,
         display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        alignSelf: 'stretch',
-        ['@media (max-width:680px)']: { // eslint-disable-line no-useless-computed-key
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
+        flexDirection: 'column',
+        flex: '0 0 30%',
+        '& a': {
+            padding: 0,
+            display: 'block',
+            width: '50%',
+            float: 'left'
+        },
+        '& img': {
+            marginTop: 'auto'
+        },
+        ['@media (max-width:1024px)']: {
+            flex: '0 0 50%',
+        },
+        ['@media (max-width:680px)']: {
+            order: 2,
+            flex: '0 0 100%',
+            marginTop: 30,
             '& nav': {
                 flexWrap: 'wrap',
-                textAlign: 'center',
-                width: '100%'
+                width: '100%',
+                display: 'flex',
+                textAlign: 'left'
             },
-            '& a': {
+            '& a:nth-child(odd)': {
+                flex: '0 0 35%',
+                marginRight: 40
+            },
+            '& a:nth-child(even)': {
+                flex: '0 0 calc(65% - 40px)',
+            }
+        },
+        ['@media (max-width:460px)']: {
+            '& a:nth-child(odd)': {
                 flex: '0 0 50%',
-                padding: '5px 10px'
+            },
+            '& a:nth-child(even)': {
+                flex: '0 0 calc(50% - 40px)',
             }
         }
 

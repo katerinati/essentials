@@ -5,6 +5,13 @@ export const styles = theme => ({
     },
     userAccountGreetings : {
         marginRight : 15,
-        textTransform : 'uppercase'
+        textTransform : 'uppercase',
+        color: '#C3C8CF',
+    },
+    arrow: {
+        fontSize: 18,
+        color: '#C3C8CF',
+        fontWeight: 500,
+        marginLeft: 5
     }
 });

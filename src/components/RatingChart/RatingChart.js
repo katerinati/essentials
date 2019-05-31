@@ -59,12 +59,14 @@ export class RatingChart extends Component{
                     <ChartTooltip detailStatus={detailStatus} detailStatusValue={detailStatusValue}  />
                 </div>
 
-                <div className={classes.factorDetails}>
-                    <CustomLink color="primary" className={classes.link} component="button" onClick={this.toggleFactor(!this.state.open)}> factor details {this.state.open ? <ExpandLess /> : <ExpandMore />}</CustomLink>
-                </div>
+
                 <Collapse in={this.state.open} timeout="auto" unmountOnExit>
                     <FactorDetail/>
                 </Collapse>
+
+                <div className={classes.factorDetails}>
+                    <CustomLink color="primary" className={classes.link} component="button" onClick={this.toggleFactor(!this.state.open)}> factor details {this.state.open ? <ExpandLess /> : <ExpandMore />}</CustomLink>
+                </div>
 
             </div>
 

@@ -4,9 +4,9 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
-import creditCardStep from '../../resources/images/creditCC-tab.png';
-import debitCardStep from '../../resources/images/debitCC-tab.png';
-import prepaidCardStep from '../../resources/images/prepaidCC-tab.png';
+import hsbcCardStep from '../../resources/images/hsbc-tab.png';
+import sainsburyCardStep from '../../resources/images/sainsbury-tab.png';
+import vanquisCardStep from '../../resources/images/vanquis-tab.png';
 
 export class SlideSwitcher extends Component {
 
@@ -30,13 +30,13 @@ export class SlideSwitcher extends Component {
                         }}
                     >
                         <Tab classes={{selected: classes.selected}} className={classes.slideTab} style={{
-                            backgroundImage : `url(${creditCardStep})`
+                            backgroundImage : `url(${hsbcCardStep})`
                         }} />
                         <Tab classes={{selected: classes.selected}} className={classes.slideTab} style={{
-                            backgroundImage : `url(${debitCardStep})`
+                            backgroundImage : `url(${sainsburyCardStep})`
                         }} />
                         <Tab classes={{selected: classes.selected}} className={classes.slideTab} style={{
-                            backgroundImage : `url(${prepaidCardStep})`
+                            backgroundImage : `url(${vanquisCardStep})`
                         }} />
                     </Tabs>
                 </AppBar>

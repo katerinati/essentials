@@ -5,7 +5,7 @@ export const styles = theme => ({
         fontSize: 0,
         textAlign: 'center',
         position: 'relative',
-        marginTop: 45,
+        marginTop: 50,
         maxWidth: 655,
         width: '100%'
     },
@@ -53,7 +53,7 @@ export const styles = theme => ({
 
     },
     factorDetails: {
-        marginTop: 25,
+        marginTop: 20,
         display: 'flex',
         justifyContent: 'center',
     },

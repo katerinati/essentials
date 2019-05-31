@@ -25,6 +25,10 @@ export class CardSlider extends Component {
         this.setState({slide: index});
     };
 
+    TestFunc = (index, indexLatest, meta) => {
+        this.setState({slide: index});
+    };
+
     renderSlideData = () => {
        const { sliderData, classes } = this.props;
 
@@ -74,11 +78,11 @@ export class CardSlider extends Component {
 
                 <InfoTooltip info={'Simple info'}/>
 
-                <SwipeableViews index={slide} >
+                <SwipeableViews index={slide} onChangeIndex={this.TestFunc}>
                     { this.renderSlideData()}
                 </SwipeableViews>
 
-                <CustomLink color={'animated'} className={classes.withIcon} ><EyeIcon width="20" height="12" viewBox="0 0 20 14" fill="#4286F5"/> View Full offer details</CustomLink>
+                <CustomLink color={'animated'} className={classes.withIcon} ><EyeIcon width="20" height="12" viewBox="0 0 20 14" fill="#4286F5"/>View details</CustomLink>
 
                 <SlideSwitcher onSlideChange={this.handleSlideChange} value={slide}/>
 
