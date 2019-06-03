@@ -16,6 +16,7 @@ export const styles = theme => ({
     },
     footerInfo: {
         flex: '0 0 50%',
+        maxWidth: 480,
         marginLeft: 'auto',
         lineHeight: 1.2,
         ['@media (max-width:680px)']: {

@@ -7,6 +7,9 @@ export const styles = theme => ({
         backgroundRepeat: 'no-repeat',
         ['@media (max-width:560px)']: {
             backgroundSize: '100%'
+        },
+        '& h6': {
+            marginTop: -20
         }
     },
     factorLink: {

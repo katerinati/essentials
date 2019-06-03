@@ -124,7 +124,7 @@ export class Chart extends Component {
                                 type="monotone"
                                 dataKey="value"
                                 stroke="#4286F5"
-                                dot={{r: 4 }} />
+                                dot={{r: 3 }} />
                             />
                         </LineChart>
                 </div>

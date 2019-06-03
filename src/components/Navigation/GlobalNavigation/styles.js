@@ -16,14 +16,33 @@ export const styles = theme => ({
         minHeight : 80
     },
     indicator: {
-        boxShadow: '0px -1px 10px rgba(66, 134, 245, 0.3)',
-        backgroundColor: theme.general.DefaultActiveColor,
-        height: 3
+        display: 'none'
     },
     mainTabItem: {
         color: '#C3C8CF',
         minWidth: 150,
         ...theme.regularText,
+        position: 'relative',
+        '&:before': {
+            content: '""',
+            width: '0',
+            position: 'absolute',
+            transition: 'width 0.3s ease',
+            left: '50%',
+            height: 3,
+            background: theme.general.DefaultActiveColor,
+            bottom: 0,
+        },
+        '&:after': {
+            content: '""',
+            width: '0',
+            position: 'absolute',
+            transition: 'width 0.3s ease',
+            right: '50%',
+            height: 3,
+            background: theme.general.DefaultActiveColor,
+            bottom: 0,
+        },
         '&:hover': {
             color: theme.general.TextPrimaryColor,
             opacity: 1,
@@ -31,9 +50,17 @@ export const styles = theme => ({
         '&:focus': {
             color: theme.general.TextPrimaryColor,
         },
+        '& > span:last-child': {
+            display: 'none'
+        }
     },
     selected: {
-        color: theme.general.TextPrimaryColor
+        '&:before': {
+            width: '50%',
+        },
+        '&:after': {
+            width: '50%',
+        }
     },
     mobileMenuWrap: {
         display: 'flex',

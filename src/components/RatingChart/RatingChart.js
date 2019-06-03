@@ -32,7 +32,7 @@ export class RatingChart extends Component{
         const {sectionTitle, sectionValue, detailStatus, detailStatusValue, className, classes} = this.props;
 
         return(
-            <div>
+            <div className={classes.ratingChartWrap}>
                 <h6 className={classes.chartTitle}>{sectionTitle}</h6>
                 <span className={classes.chartDesc}>{sectionValue}</span>
                 <div className={classes.ratingChartRow}>

@@ -11,7 +11,7 @@ export const styles = theme => ({
         height: 0
     },
     detailsData: {
-        margin: '0 -10px 30px -10px'
+        margin: '0 -50px 30px -50px'
     },
     cardSlider: {
         marginBottom: 50

@@ -11,9 +11,17 @@ export const styles = theme => ({
         color: theme.general.TextSecondaryColor,
     },
     pieDesc: {
-        maxWidth: 300,
+        maxWidth: 290,
         display: 'block',
-        margin: '0 auto'
+        margin: '35px auto 0'
+    },
+    PieChart: {
+        marginTop: 30,
+        '& > svg': {
+            display: 'block',
+            margin: '0 auto'
+        }
+
     }
 
 });

@@ -67,5 +67,9 @@ export const styles = theme => ({
             textShadow: '2px 3px 6px #4286F5',
             textDecoration: 'none'
         }
+    },
+    ratingChartWrap: {
+        padding: '30px 40px',
+        boxShadow: '0px 15px 60px rgba(40, 74, 253, 0.1), 0px 10px 15px rgba(5, 7, 19, 0.02)'
     }
 });
