@@ -32,6 +32,7 @@ export const styles = theme => ({
             height: 3,
             background: theme.general.DefaultActiveColor,
             bottom: 0,
+            boxShadow: '0px -1px 5px rgba(66, 134, 245, 0.3)'
         },
         '&:after': {
             content: '""',
@@ -42,6 +43,7 @@ export const styles = theme => ({
             height: 3,
             background: theme.general.DefaultActiveColor,
             bottom: 0,
+            boxShadow: '0px -1px 5px rgba(66, 134, 245, 0.3)'
         },
         '&:hover': {
             color: theme.general.TextPrimaryColor,

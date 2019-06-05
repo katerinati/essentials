@@ -1,8 +1,7 @@
 export const styles = theme => ({
-    container : theme.container,
     footer : {
         backgroundColor : '#FDFDFF',
-        padding: '0 20px'
+        ...theme.container
     },
     footerWrap : {
         padding: '22px 0',

@@ -70,6 +70,12 @@ export const styles = theme => ({
     },
     ratingChartWrap: {
         padding: '30px 40px',
-        boxShadow: '0px 15px 60px rgba(40, 74, 253, 0.1), 0px 10px 15px rgba(5, 7, 19, 0.02)'
+    },
+    wrapper: {
+        marginTop: 25,
+        backgroundColor: 'rgba(228, 230, 238, 0.2)'
+    },
+    eqweqweqw: {
+
     }
 });

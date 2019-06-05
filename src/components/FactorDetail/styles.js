@@ -1,49 +1,59 @@
 export const styles = theme =>({
     singleFactorWrap:{
-        backgroundColor: 'rgba(228, 230, 238, 0.2)',
-        padding: '20px 15px',
-        marginTop: 25
+        padding: '32px 15px',
+        maxWidth: 500,
+        display: 'block',
+        margin: '0 auto'
     },
     singleFactorText:{
-        ...theme.secondaryRegularText,
+        fontSize: 15,
+        lineHeight: '20px',
         fontWeight: theme.general.MediumFontWeight,
-        paddingBottom: 15,
-        borderBottom: '2px solid #E4E6EE'
+        paddingBottom: 25,
+        borderBottom: '2px solid #E4E6EE',
+        color: theme.general.TextSecondaryColor
     },
     singleFactorDesc:{
-        margin: '20px 0',
+        marginTop: 36,
         display: 'flex',
-        ['@media (max-width:640px)']: {
-            flexWrap: 'wrap'
-        }
-
+        flexWrap: 'wrap'
     },
     factorNav: {
         display: 'flex',
-        justifyContent: 'center',
-        marginTop: 25
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        marginTop: 40,
+        width: '100%'
+    },
+    factorActionBtn: {
+        display: 'flex',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        width: '100%'
     },
     btn: {
         ...theme.buttonMedium,
-        ...theme.smallRegularText,
-        marginBottom: 20
+        fontSize: 13
     },
     link: {
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center'
+        paddingLeft: 10
     },
     singleFactorSubtitle: {
         ...theme.secondaryRegularTextDark,
-        marginBottom: 15
+        fontSize: 15,
+        marginBottom: 22
     },
     singleFactorInfo: {
         ...theme.secondaryMediumText,
-        marginBottom: 15
+        fontSize: 15,
+        marginBottom: 28
     },
     singleFactorReport: {
         paddingLeft: 10,
-        borderLeft : '4px solid #E4E6EE'
+        borderLeft : '4px solid #E4E6EE',
+        marginBottom: 38
     },
     reportBalance: {
         ...theme.secondaryRegularText
@@ -57,10 +67,42 @@ export const styles = theme =>({
 
     },
     factorTypography: {
-        marginLeft: 30,
         ['@media (max-width:640px)']: {
             marginLeft: 0
         }
+    },
+    factorActions: {
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'flex-start'
+    },
+    stepNav: {
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        display: 'flex',
+        '& a:first-child': {
+            paddingLeft: 0
+        }
+    },
+    factorSlideNav: {
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        display: 'flex',
+        marginLeft: 'auto',
+    },
+    slideItem: {
+        width: 8,
+        height: 8,
+        backgroundColor: '#C3C8CF',
+        marginRight: 12,
+        borderRadius: '50%',
+        display: 'inline-block',
+        '&:last-child': {
+            marginRight: 0
+        },
+    },
+    activeItem: {
+        backgroundColor: theme.general.DefaultActiveColor
     }
 
 

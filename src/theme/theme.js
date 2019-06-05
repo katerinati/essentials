@@ -126,11 +126,11 @@ export const theme = createMuiTheme({
         backgroundColor: DefaultActiveColor,
         boxShadow: '0px 10px 15px rgba(66, 134, 245, 0.25)',
         borderRadius: 48,
-        padding: '15px 10px',
+        padding: '13px 10px',
         color: '#fff',
         textAlign: 'center',
         textTransform: 'uppercase',
-        maxWidth: 200,
+        maxWidth: 160,
         width: '100%',
         transition: 'opacity 0.2s ease-out',
         '&:hover':{

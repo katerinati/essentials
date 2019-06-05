@@ -77,11 +77,12 @@ export class Chart extends Component {
                             <YAxis
                                 axisLine={false}
                                 tickLine={false}
-                                dataKey="value"
+                                // dataKey="value"
+                                ticks={[42,55,69]}
                                 type="number"
-                                domain={['dataMin - 13', 'dataMax']}
+                                domain={['dataMin', 'dataMax']}
                                 tickFormatter={tickFormaterY}
-                                tickCount={4}
+                                tickCount={3}
                                 tickSize={8}
                             />
                             <XAxis
@@ -124,7 +125,7 @@ export class Chart extends Component {
                                 type="monotone"
                                 dataKey="value"
                                 stroke="#4286F5"
-                                dot={{r: 3 }} />
+                                dot={{r: 4 }} />
                             />
                         </LineChart>
                 </div>

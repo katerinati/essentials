@@ -40,7 +40,7 @@ export const styles = theme => ({
     indicator: {
         backgroundColor: theme.general.DefaultActiveColor,
         height: 4,
-        width: 12,
+        maxWidth: 12,
         ['@media (max-width:600px)']: {
             display: 'none'
         }

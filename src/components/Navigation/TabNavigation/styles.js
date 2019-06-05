@@ -2,7 +2,7 @@ export const styles = theme => ({
     tabNavigation:{
         marginTop: 30,
         backgroundColor: '#fff',
-        boxShadow: ' 0px 15px 60px rgba(40, 74, 253, 0.1), 0px 10px 15px rgba(5, 7, 19, 0.03)',
+        boxShadow: '0px 0px 15px rgba(5, 7, 19, 0.02), 0px 15px 60px rgba(40, 74, 253, 0.1), 0px 10px 15px rgba(5, 7, 19, 0.03)',
         ['@media (max-width:740px)']: {
             marginLeft: 90,
             overflow: 'visible',
@@ -29,9 +29,6 @@ export const styles = theme => ({
         },
     },
     indicator: {
-        // backgroundColor: theme.general.DefaultActiveColor,
-        // height: 3,
-        // boxShadow: '0px -1px 10px rgba(66, 134, 245, 0.3)',
         display: 'none'
     },
     root: {
@@ -55,6 +52,7 @@ export const styles = theme => ({
             left: '50%',
             height: 3,
             background: theme.general.DefaultActiveColor,
+            boxShadow: '0px -1px 5px rgba(66, 134, 245, 0.3)',
             bottom: 0,
         },
         '&:after': {
@@ -66,14 +64,15 @@ export const styles = theme => ({
             height: 3,
             background: theme.general.DefaultActiveColor,
             bottom: 0,
+            boxShadow: '0px -1px 5px rgba(66, 134, 245, 0.3)'
         },
         '& > span:last-child': {
             display: 'none'
-        }
+        },
     },
     selected: {
         // color: theme.general.DefaultActiveColor,
-        boxShadow: '0px -1px 10px rgba(66, 134, 245, 0.3)',
+        boxShadow: '-15px 0px 20px rgba(49, 80, 243, 0.05), -5px 0px 10px rgba(5, 7, 19, 0.03), 15px 0px 20px rgba(49, 80, 243, 0.05), 5px 0px 10px rgba(5, 7, 19, 0.03)',
         '&:before': {
             width: '50%',
         },

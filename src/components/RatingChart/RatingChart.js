@@ -9,6 +9,7 @@ import ExpandMore from '@material-ui/icons/ExpandMore';
 import Collapse from '@material-ui/core/Collapse';
 import FactorDetail from '../FactorDetail';
 
+
 export class RatingChart extends Component{
 
     constructor(props) {
@@ -60,8 +61,8 @@ export class RatingChart extends Component{
                 </div>
 
 
-                <Collapse in={this.state.open} timeout="auto" unmountOnExit>
-                    <FactorDetail/>
+                <Collapse in={this.state.open} timeout="auto" classes={{ wrapper: classes.wrapper }} unmountOnExit>
+                        <FactorDetail/>
                 </Collapse>
 
                 <div className={classes.factorDetails}>

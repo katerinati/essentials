@@ -15,6 +15,7 @@ export const styles = theme =>({
     root: {
         color: '#C3C8CF',
         margin: '0 12px',
+        overflow: 'visible',
         '&:first-child': {
             marginLeft: 0
         },
@@ -35,7 +36,8 @@ export const styles = theme =>({
             left: '50%',
             height: 2,
             background: theme.general.DefaultActiveColor,
-            bottom: 0,
+            bottom: -2,
+            boxShadow: '0px -1px 5px rgba(66, 134, 245, 0.3)'
         },
         '&:after': {
             content: '""',
@@ -45,11 +47,17 @@ export const styles = theme =>({
             right: '50%',
             height: 2,
             background: theme.general.DefaultActiveColor,
-            bottom: 0,
+            bottom: -2,
+            boxShadow: '0px -1px 5px rgba(66, 134, 245, 0.3)'
         },
         '& > span:last-child': {
             display: 'none'
         }
+    },
+    wrapHandle: {
+      '& > div > div': {
+          overflow: 'visible'
+      }
     },
     tabLabel: {
         '& > span': {
@@ -64,5 +72,8 @@ export const styles = theme =>({
         '&:after': {
             width: '50%',
         }
+    },
+    qweqwe: {
+
     }
 });

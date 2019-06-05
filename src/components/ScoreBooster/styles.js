@@ -1,12 +1,13 @@
 export const styles = theme => ({
     booster:{
-        paddingLeft: 50,
+        paddingLeft: 45,
         position: 'relative',
-        marginBottom: 20
+        marginBottom: 30
     },
     boosterTitle: {
         ...theme.secondaryRegularTextDark,
-        textTransform: 'uppercase'
+        textTransform: 'uppercase',
+        marginBottom: 2
     },
     boosterImg: {
         position: 'absolute',

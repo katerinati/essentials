@@ -33,6 +33,7 @@ export class PageNavigation extends Component {
                         indicator: classes.indicator,
 
                     }}
+                    className={classes.wrapHandle}
                 >
                     { PageTabs.map( (tab, i) => <Tab classes={{selected: classes.selected, wrapper: classes.tabLabel}} className={classes.root} label={tab} key={i} />) }
                     <FraudWatch />

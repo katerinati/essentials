@@ -25,7 +25,7 @@ export class CardSlider extends Component {
         this.setState({slide: index});
     };
 
-    TestFunc = (index, indexLatest, meta) => {
+    changeTab = (index, indexLatest, meta) => {
         this.setState({slide: index});
     };
 
@@ -78,7 +78,7 @@ export class CardSlider extends Component {
 
                 <InfoTooltip info={'Simple info'}/>
 
-                <SwipeableViews index={slide} onChangeIndex={this.TestFunc}>
+                <SwipeableViews index={slide} onChangeIndex={this.changeTab}>
                     { this.renderSlideData()}
                 </SwipeableViews>
 

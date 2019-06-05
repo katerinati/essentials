@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactApexChart from 'react-apexcharts';
 import Typography from '@material-ui/core/Typography';
+import {CircleChart} from "../Icons/CircleChart";
 
 export class PieChart extends Component {
 
@@ -63,12 +64,13 @@ export class PieChart extends Component {
         return(
 
             <div className={classes.PieChart}>
-                <ReactApexChart
-                    options={this.state.options}
-                    series={this.state.series}
-                    type="radialBar"
-                    height="300"
-                />
+                {/*<ReactApexChart*/}
+                    {/*options={this.state.options}*/}
+                    {/*series={this.state.series}*/}
+                    {/*type="radialBar"*/}
+                    {/*height="300"*/}
+                {/*/>*/}
+                <CircleChart width="240" height="243" viewBox="0 0 240 243" fill="none" xmlns="http://www.w3.org/2000/svg" />
                 <div className={classes.pieDesc}>
                     <Typography className={classes.cardChartInfo} align="center">Your credit card balances look pretty high </Typography>
                     <Typography className={classes.cardChartDesc} align="center">A good rule of thumb is to keep your balances below 30% of your limit </Typography>
