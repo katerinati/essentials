@@ -2,6 +2,7 @@ import React from 'react';
 import { HeartIcon } from '../Icons/Heart'
 
 export const SaveItem = ({className}) => (
+
     <div className={className}>
         <span> Save </span>
         <HeartIcon width="32"

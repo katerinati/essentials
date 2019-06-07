@@ -7,7 +7,10 @@ export const styles = theme => ({
         position: 'relative',
         marginTop: 50,
         maxWidth: 655,
-        width: '100%'
+        width: '100%',
+        ['@media (max-width:460px)']: {
+            maxWidth: 300
+        }
     },
     chartElement: {
         width: 'calc( 20% - 4px )',
@@ -57,14 +60,17 @@ export const styles = theme => ({
         textTransform: 'uppercase',
         display: 'flex',
         alignItems: 'center',
-        transition: 'text-shadow 0.2s ease',
+        transition: 'color 0.2s ease',
         '&:hover': {
-            textShadow: '2px 3px 6px #4286F5',
+            color: theme.general.HoverActiveColor,
             textDecoration: 'none'
         }
     },
     ratingChartWrap: {
         padding: '30px 40px',
+        ['@media (max-width:1024px)']: {
+            padding: '18px 22px',
+        }
     },
     wrapper: {
         marginTop: 25,

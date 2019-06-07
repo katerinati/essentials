@@ -9,14 +9,13 @@ import FactorStep from "../../components/FactorStep";
 import CardSlider from "../../components/CardSlider";
 import DashboardTabs from "../../components/DashboardTabs/DashboardTabs";
 import TabNavigation from "../../components/Navigation/TabNavigation";
+import InfoTooltip from "../../components/InfoTooltip";
 
 /*
 * Mock Data
 * */
 import { reports, reportDataDetail } from './_mockData';
 import { sliderMockData } from './_mockData';
-import InfoTooltip from "../../components/InfoTooltip";
-
 
 export class Home extends Component {
 

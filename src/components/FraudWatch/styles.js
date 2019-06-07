@@ -2,8 +2,20 @@ export const styles = theme => ({
     fraudCheck: {
         marginLeft: 'auto',
         display: 'flex',
-        alignItems: 'center'
-
+        alignItems: 'center',
+        '& svg': {
+            transition: 'all 0.2s ease',
+            marginLeft: 5,
+            backgroundColor: '#E4E6EE',
+            borderRadius: '50%'
+        },
+        '&:focus svg, &:active svg': {
+            fill: theme.general.DefaultActiveColor,
+            backgroundColor: theme.general.SvgFocusColor
+        },
+        '&:hover a': {
+            color: theme.general.HoverActiveColor,
+        },
     },
     check: {
         ...theme.FontTypeTwo,
@@ -11,10 +23,7 @@ export const styles = theme => ({
         textTransform: 'uppercase',
         color: theme.general.GeneralTextColor,
         marginRight: 10,
-        transition: 'text-shadow 0.2s ease',
-        '&:hover': {
-            textShadow: '2px 3px 6px #C3C8CF'
-        }
+        transition: 'color 0.2s ease',
     }
 
 })

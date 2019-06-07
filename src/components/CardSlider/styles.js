@@ -32,6 +32,9 @@ export const styles = theme => ({
             flexDirection: 'column',
             alignItems: 'center'
         },
+        ['@media (max-width:460px)']: {
+            marginTop: 15,
+        },
     },
     slideImage: {
         marginRight: 15,
@@ -48,7 +51,10 @@ export const styles = theme => ({
     },
     slideInfo: {
         padding: '8px 0 25px 0',
-        flex: 2
+        flex: 2,
+        ['@media (max-width:460px)']: {
+            width: '100%'
+        },
     },
     slideTitle: {
         marginBottom: 10,
@@ -57,6 +63,7 @@ export const styles = theme => ({
         justifyContent: 'space-between',
         ['@media (max-width:460px)']: {
             justifyContent: 'center',
+            marginBottom: 20
         },
     },
     withIcon: {
@@ -82,12 +89,21 @@ export const styles = theme => ({
         marginBottom: 30,
         ['@media (max-width:460px)']: {
             justifyContent: 'center',
+            flexDirection: 'column'
         },
     },
     reviewInfo: {
         marginLeft: 10,
         ...theme.FontTypeTwo,
         color: theme.general.DefaultActiveColor,
+        transition: 'color 0.2s ease',
+        '&:hover': {
+            color: theme.general.HoverActiveColor,
+            cursor: 'pointer'
+        },
+        ['@media (max-width:460px)']: {
+            margin: '5px 0 0'
+        },
     },
     saveItem: {
         display: 'flex',
@@ -95,6 +111,24 @@ export const styles = theme => ({
         justifyContent: 'center',
         ...theme.FontTypeTwo,
         color: theme.general.PrimaryTextColor,
+        transition: 'color 0.2s ease',
+        '&:hover, &:focus, &:active' : {
+            color: theme.general.HoverActiveColor,
+            cursor: 'pointer'
+        },
+        '& svg': {
+            transition: 'all 0.2s ease',
+            marginLeft: 5,
+            backgroundColor: 'transparent',
+            borderRadius: '50%'
+        },
+        '&:hover svg': {
+            fill: theme.general.HoverActiveColor,
+        },
+        '&:focus svg, &:active svg': {
+            fill: theme.general.DefaultActiveColor,
+            backgroundColor: theme.general.SvgFocusColor
+        },
         ['@media (max-width:460px)']: {
             display: 'none'
         },
@@ -106,7 +140,7 @@ export const styles = theme => ({
             padding: '0 10px'
         },
         ['@media (max-width:460px)']: {
-            width: '33.333%'
+            width: '33.333%',
         },
         '&:first-child': {
             paddingLeft: 0

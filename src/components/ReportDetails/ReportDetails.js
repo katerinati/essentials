@@ -22,6 +22,7 @@ export class ReportDetails extends Component {
                                      detailStatus={report.detailStatus}
                                      detailStatusValue={report.detailStatusValue}
                                      updateHeight={updateHeight}
+                                     factorDetails={report.factorDetails}
 
                         />
                     </Paper>

@@ -1,4 +1,9 @@
 export const styles = theme =>({
+    pageMenuWrap: {
+        ['@media (max-width:460px)']: {
+            marginRight: -20
+        },
+    },
     pageNavigation: {
         minHeight: 75,
         borderBottom: '1px solid #E4E6EE',
@@ -34,7 +39,10 @@ export const styles = theme =>({
             height: 2,
             background: theme.general.DefaultActiveColor,
             bottom: -2,
-            boxShadow: '0px -1px 5px rgba(66, 134, 245, 0.3)'
+            boxShadow: '0px -1px 5px rgba(66, 134, 245, 0.3)',
+            ['@media (max-width:460px)']: {
+                bottom: 0
+            },
         },
         '&:after': {
             content: '""',
@@ -45,11 +53,15 @@ export const styles = theme =>({
             height: 2,
             background: theme.general.DefaultActiveColor,
             bottom: -2,
-            boxShadow: '0px -1px 5px rgba(66, 134, 245, 0.3)'
+            boxShadow: '0px -1px 5px rgba(66, 134, 245, 0.3)',
+            ['@media (max-width:460px)']: {
+                bottom: 0
+            },
         },
         '& > span:last-child': {
             display: 'none'
-        }
+        },
+
     },
     wrapHandle: {
       '& > div > div': {

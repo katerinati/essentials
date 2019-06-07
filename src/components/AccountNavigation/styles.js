@@ -7,7 +7,12 @@ export const styles = theme => ({
         marginRight : 15,
         textTransform : 'uppercase',
         color: theme.general.GeneralTextColor,
+        textDecoration: 'none',
         ...theme.FontTypeThree,
+        transition: 'color 0.2s ease',
+        '&:hover': {
+            color: theme.general.HoverActiveColor,
+        }
     },
     arrow: {
         fontSize: 18,

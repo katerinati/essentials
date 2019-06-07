@@ -33,7 +33,7 @@ export class RatingChart extends Component{
 
     render() {
 
-        const {sectionTitle, sectionValue, detailStatus, detailStatusValue, className, classes} = this.props;
+        const {sectionTitle, sectionValue, detailStatus, detailStatusValue, factorDetails, className, classes} = this.props;
 
         return(
             <div className={classes.ratingChartWrap}>
@@ -65,7 +65,7 @@ export class RatingChart extends Component{
 
 
                 <Collapse in={this.state.open} classes={{ wrapper: classes.wrapper }} unmountOnExit>
-                        <FactorDetail/>
+                        <FactorDetail factorDetails={factorDetails}/>
                 </Collapse>
 
                 <div className={classes.factorDetails}>

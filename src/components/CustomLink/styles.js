@@ -1,11 +1,11 @@
 export const styles = theme => ({
     primary : {
         color: theme.link.color.primary,
-        transition: 'text-shadow 0.2s ease',
+        transition: 'color 0.2s ease',
         textTransform: 'uppercase',
-        ...theme.regularText,
+        ...theme.FontTypeFour,
         '&:hover': {
-            textShadow: '2px 3px 6px #4286F5',
+            color: theme.general.HoverActiveColor,
             textDecoration: 'none',
             cursor: 'pointer'
         },
@@ -19,21 +19,21 @@ export const styles = theme => ({
     custom : {
         color: '#A1A6AE',
         textTransform: 'uppercase',
-        ...theme.regularText,
+        ...theme.FontTypeFour,
         padding: '0 8px',
-        transition: 'text-shadow 0.2s ease',
+        transition: 'color 0.2s ease',
         '&:hover': {
-            textShadow: '2px 3px 6px #A1A6AE',
+            color: theme.general.HoverActiveColor,
             textDecoration: 'none',
             cursor: 'pointer'
         }
     },
     animated: {
-        ...theme.regularText,
+        ...theme.FontTypeFour,
         color: theme.general.DefaultActiveColor,
-        transition: 'text-shadow 0.2s ease',
+        transition: 'color 0.2s ease',
         '&:hover': {
-            textShadow: '2px 3px 6px #4286F5',
+            color: theme.general.HoverActiveColor,
             textDecoration: 'none',
             cursor: 'pointer'
         },

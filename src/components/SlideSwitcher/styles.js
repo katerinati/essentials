@@ -52,7 +52,7 @@ export const styles = theme => ({
             left: 'calc( 50% - 16px )'
         },
         ['@media (max-width:460px)']: {
-            top: 'calc(50% - 20px)',
+            top: 'calc(50% - 40px)',
         }
     }
 });

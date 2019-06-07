@@ -118,6 +118,7 @@ export class Chart extends Component {
                                     color: '#A1A6AE',
                                     textAlign: 'center'
                                 }}
+                                isAnimationActive={false}
                             />
                             <CartesianGrid vertical={false} strokeDasharray="8 9" />
                             <Line

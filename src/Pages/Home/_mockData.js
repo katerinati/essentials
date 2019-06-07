@@ -9,6 +9,16 @@ export const reports = [
                 'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
                 'points' : '+46',
                 'reportedBalance' : '£11,343'
+            },
+            {
+                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                'points' : '+46',
+                'reportedBalance' : '£11,343'
+            },
+            {
+                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                'points' : '+46',
+                'reportedBalance' : '£11,343'
             }
         ]
     },
@@ -18,6 +28,16 @@ export const reports = [
         'detailStatus' : 'Fair',
         'detailStatusValue' : '49',
         'factorDetails' : [
+            {
+                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                'points' : '+46',
+                'reportedBalance' : '£11,343'
+            },
+            {
+                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                'points' : '+46',
+                'reportedBalance' : '£11,343'
+            },
             {
                 'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
                 'points' : '+46',
@@ -35,6 +55,16 @@ export const reports = [
                 'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
                 'points' : '+46',
                 'reportedBalance' : '£11,343'
+            },
+            {
+                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                'points' : '+46',
+                'reportedBalance' : '£11,343'
+            },
+            {
+                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                'points' : '+46',
+                'reportedBalance' : '£11,343'
             }
         ]
     },
@@ -44,6 +74,16 @@ export const reports = [
         'detailStatus' : 'Poor',
         'detailStatusValue' : '29',
         'factorDetails' : [
+            {
+                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                'points' : '+46',
+                'reportedBalance' : '£11,343'
+            },
+            {
+                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                'points' : '+46',
+                'reportedBalance' : '£11,343'
+            },
             {
                 'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
                 'points' : '+46',

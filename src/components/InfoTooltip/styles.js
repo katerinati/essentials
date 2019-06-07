@@ -10,7 +10,8 @@ export const styles = theme => ({
         minWidth: 'unset',
         borderRadius: '50%',
         textTransform: 'lowercase',
-        transition: 'box-shadow 0.2s ease-out',
+        transition: 'opacity 0.2s ease-out',
+        opacity: 1,
         '& span:first-child': {
             width: 2,
             height: 7,
@@ -29,8 +30,7 @@ export const styles = theme => ({
         },
 
         '&:hover': {
-            backgroundColor: 'transparent',
-            boxShadow: `1px 1px 6px  ${theme.general.DefaultActiveColor}`
+            opacity: 0.8
         }
     },
     tooltipWrap: {

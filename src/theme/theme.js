@@ -9,6 +9,9 @@ const SecondaryTextColor = '#474C58';
 const SiteBackgroundColor = '#FDFDFF';
 
 const DefaultActiveColor = '#4286F5';
+const HoverActiveColor = '#76A7F7';
+const SvgFocusColor = '#A3CEF1';
+
 const VeryPoorColor = '#F15038';
 const PoorColor = '#F97642';
 const FairColor = '#FEB904';
@@ -27,8 +30,10 @@ export const theme = createMuiTheme({
 
     general: {
         HeeboFont : HeeboFont,
+        SvgFocusColor: SvgFocusColor,
         GeneralTextColor: GeneralTextColor,
         SecondaryTextColor : SecondaryTextColor,
+        HoverActiveColor: HoverActiveColor,
         PrimaryTextColor : PrimaryTextColor,
         SiteBackgroundColor : SiteBackgroundColor,
         DefaultActiveColor : DefaultActiveColor,
@@ -151,6 +156,10 @@ export const theme = createMuiTheme({
         '&:hover':{
             backgroundColor: DefaultActiveColor,
             opacity: 0.8
+        },
+        ['@media (max-width:460px)']: {
+            maxWidth: 200,
+            fontSize: 11
         }
 
     }

@@ -36,6 +36,7 @@ export const styles = theme => ({
         ...theme.FontTypeTwo,
         boxShadow: 'none',
         transition: 'box-shadow 0.3s ease-in-out',
+        minWidth: 160,
         '&:hover': {
             color: theme.general.DefaultActiveColor,
             opacity: 1,

@@ -13,11 +13,13 @@ export class DataDetails extends Component {
         const { reportDataDetail, classes } = this.props;
 
         return(
-            <Paper className={classes.dataDetailWrap}>
-                { reportDataDetail.map( (reportData, i) =>
-                    <DetailItem reportDataDetail={reportData} key={i} className={classes.detailItem}/>
-                )}
-            </Paper>
+            <div className={classes.tabWrap}>
+                <Paper className={classes.dataDetailWrap}>
+                    { reportDataDetail.map( (reportData, i) =>
+                        <DetailItem reportDataDetail={reportData} key={i} className={classes.detailItem}/>
+                    )}
+                </Paper>
+            </div>
         )
     }
 }

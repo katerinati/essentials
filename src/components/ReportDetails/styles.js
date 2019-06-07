@@ -11,19 +11,19 @@ export const styles = theme => ({
             bottom: 0,
             boxShadow: '0px 15px 60px rgba(40, 74, 253, 0.1), 0px 10px 15px rgba(5, 7, 19, 0.03)',
             display: 'block',
-            height: 58,
-            left: '12.8%',
-            width: '74.74%',
+            height: 105,
+            left: '5.05%',
+            width: '89.89%',
             zIndex: -1
         },
         '&:last-child' : {
             marginBottom: 0
         },
-        ['@media (max-width:640px)']: {
-            padding: '20px 30px'
-        }
     },
     tabWrap: {
-        padding: '25px 50px 60px 50px'
+        padding: '25px 50px 60px 50px',
+        ['@media (max-width:1024px)']: {
+            padding: '25px 0 60px 0',
+        },
     }
 })

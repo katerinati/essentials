@@ -24,7 +24,7 @@ export class PageNavigation extends Component {
         const {classes} = this.props;
 
         return (
-            <div>
+            <div className={classes.pageMenuWrap}>
                 <Tabs
                     value={this.state.value}
                     onChange={this.handleChange}

@@ -6,9 +6,9 @@ export const styles = theme => ({
         color: theme.general.DefaultActiveColor,
         textDecoration: 'none',
         textTransform: 'uppercase',
-        transition: 'text-shadow 0.2s ease',
+        transition: 'color 0.2s ease',
         '&:hover': {
-            textShadow: '2px 3px 6px #4286F5'
+            color: theme.general.HoverActiveColor
         }
     },
     arrowItem:{
