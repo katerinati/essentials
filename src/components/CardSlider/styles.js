@@ -62,11 +62,16 @@ export const styles = theme => ({
     withIcon: {
         margin: '0 0 25px',
         display: 'block',
-        textAlign: 'center'
+        textAlign: 'center',
+        ...theme.FontTypeTwo,
+        '& svg': {
+            marginRight: 10
+        }
     },
     cardName: {
         marginRight: 'auto',
-        ...theme.highlightedText,
+        ...theme.FontTypeNine,
+        color: theme.general.SecondaryTextColor,
         ['@media (max-width:460px)']: {
             marginRight: 'unset'
         },
@@ -81,14 +86,15 @@ export const styles = theme => ({
     },
     reviewInfo: {
         marginLeft: 10,
-        ...theme.regularText,
+        ...theme.FontTypeTwo,
         color: theme.general.DefaultActiveColor,
     },
     saveItem: {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        ...theme.secondaryRegularText,
+        ...theme.FontTypeTwo,
+        color: theme.general.PrimaryTextColor,
         ['@media (max-width:460px)']: {
             display: 'none'
         },
@@ -121,10 +127,12 @@ export const styles = theme => ({
         '&:last-child': {
             marginBottom: 0
         },
-        ...theme.secondaryRegularText
+        ...theme.FontTypeTwo,
+        color: theme.general.PrimaryTextColor
     },
     highlightedText: {
-        ...theme.highlightedText,
+        ...theme.FontTypeSix,
+        color: theme.general.SecondaryTextColor,
         ['@media (max-width:760px)']: {
             fontSize: 13
         },
@@ -133,9 +141,10 @@ export const styles = theme => ({
         display: 'block',
         textAlign: 'center',
         marginBottom: 40,
+        ...theme.FontTypeTwo,
         ['@media (max-width:600px)']: {
             marginBottom: 30,
-            color: '#C3C8CF'
+            color: theme.general.GeneralTextColor
         }
     }
 })

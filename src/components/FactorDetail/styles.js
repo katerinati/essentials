@@ -6,12 +6,10 @@ export const styles = theme =>({
         margin: '0 auto'
     },
     singleFactorText:{
-        fontSize: 15,
-        lineHeight: '20px',
-        fontWeight: theme.general.MediumFontWeight,
+        ...theme.FontTypeEight,
+        color: theme.general.PrimaryTextColor,
         paddingBottom: 25,
-        borderBottom: '2px solid #E4E6EE',
-        color: theme.general.TextSecondaryColor
+        borderBottom: '2px solid #E4E6EE'
     },
     singleFactorDesc:{
         marginTop: 36,
@@ -36,18 +34,19 @@ export const styles = theme =>({
         fontSize: 13
     },
     link: {
+        ...theme.FontTypeFour,
         display: 'flex',
         alignItems: 'center',
         paddingLeft: 10
     },
     singleFactorSubtitle: {
-        ...theme.secondaryRegularTextDark,
-        fontSize: 15,
+        ...theme.FontTypeNine,
+        color: theme.general.SecondaryTextColor,
         marginBottom: 22
     },
     singleFactorInfo: {
-        ...theme.secondaryMediumText,
-        fontSize: 15,
+        ...theme.FontTypeEight,
+        color: theme.general.PrimaryTextColor,
         marginBottom: 28
     },
     singleFactorReport: {
@@ -56,12 +55,14 @@ export const styles = theme =>({
         marginBottom: 38
     },
     reportBalance: {
-        ...theme.secondaryRegularText
+        ...theme.FontTypeFour,
+        color: theme.general.PrimaryTextColor
     },
     reportTitle: {
-        ...theme.secondaryRegularTextDark,
+        ...theme.FontTypeFour,
+        color: theme.general.SecondaryTextColor,
         textTransform: 'uppercase',
-        marginBottom: 5
+        marginBottom: 2
     },
     factorBooster: {
 

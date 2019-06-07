@@ -1,7 +1,8 @@
 export const styles = theme => ({
     tabTitle: {
         textTransform: 'uppercase',
-        fontSize: 13,
+        ...theme.FontTypeTwo,
+        color: theme.general.SecondaryTextColor,
         margin: '30px 0 5px'
     }
 });

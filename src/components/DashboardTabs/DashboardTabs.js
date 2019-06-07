@@ -7,27 +7,46 @@ import SwipeableViews from 'react-swipeable-views';
 export default class DashboardTabs extends Component {
     constructor(props){
         super(props);
+        this.myRef = React.createRef();
 
         this.state = {
-            view : 0
+            slide : 0
         }
+
+        this.swipeableActions = {}
     }
 
     handleTabChange = (_, index) => {
-        this.setState({view: index});
+        this.setState({slide: index});
+    };
+
+    handleChangeTab = (index, indexLatest, meta) => {
+        this.setState({slide: index});
+    };
+
+    handleUpdateHeight = () => {
+        for(let i = 0; i < 9; i++) {
+            setTimeout(() => {this.swipeableActions.updateHeight()}, 45 * i)
+        }
     };
 
     render() {
 
         const { reports, reportDataDetail, classes } = this.props;
-        const { view } = this.state;
+        const { slide } = this.state;
 
         return(
             <section className={classes.detailsData}>
-                <TabSwitcher onTabChange={this.handleTabChange} value={view}/>
+                <TabSwitcher onTabChange={this.handleTabChange} value={slide}/>
 
-                <SwipeableViews index={view}>
-                    <ReportDetails reports={reports} />
+                <SwipeableViews index={slide}
+                                onChangeIndex={this.handleChangeTab}
+                                enableMouseEvents
+                                ref={this.myRef}
+                                animateHeight
+                                action={ (actions) => { this.swipeableActions = actions; }}
+                >
+                    <ReportDetails reports={reports} updateHeight={this.handleUpdateHeight} />
                     <DataDetails reportDataDetail={reportDataDetail} />
                 </SwipeableViews>
             </section>
@@ -37,3 +56,4 @@ export default class DashboardTabs extends Component {
     }
 
 }
+

@@ -32,24 +32,19 @@ export const styles = theme => ({
         backgroundColor: theme.general.ExcellentColor
     },
     chartTitle: {
-        fontSize: 13,
-        fontWeight: 500,
+        ...theme.FontTypeTwo,
+        color: theme.general.SecondaryTextColor,
         textTransform: 'uppercase',
-        color: '#474C58',
         display: 'block',
         textAlign: 'center',
         margin: '0 0 10px 0',
-        fontFamily: theme.general.HeeboFont
     },
     chartDesc: {
         display: 'block',
         textAlign: 'center',
-        fontSize: 18,
-        fontWeight: 500,
-        letterSpacing: '0.1em',
-        textTransform: 'uppercase',
-        color: '#C3C8CF',
-        fontFamily: theme.general.HeeboFont
+        ...theme.FontTypeSeven,
+        color: theme.general.GeneralTextColor,
+        textTransform: 'uppercase'
 
     },
     factorDetails: {
@@ -58,7 +53,7 @@ export const styles = theme => ({
         justifyContent: 'center',
     },
     link: {
-        ...theme.regularText,
+        ...theme.FontTypeTwo,
         textTransform: 'uppercase',
         display: 'flex',
         alignItems: 'center',
@@ -75,7 +70,4 @@ export const styles = theme => ({
         marginTop: 25,
         backgroundColor: 'rgba(228, 230, 238, 0.2)'
     },
-    eqweqweqw: {
-
-    }
 });

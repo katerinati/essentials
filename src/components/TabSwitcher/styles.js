@@ -8,7 +8,8 @@ export const styles = theme => ({
     tab: {
         minWidth: 130,
         backgroundColor: '#E4E6EE',
-        ...theme.secondaryRegularText,
+        ...theme.FontTypeTwo,
+        color: theme.general.PrimaryTextColor,
         '&:first-child': {
             borderRadius: '48px 0px 0px 48px',
             marginRight: 4

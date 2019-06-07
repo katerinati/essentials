@@ -10,7 +10,7 @@ export const styles = theme => ({
             '&:before': {
                 content: '"Swipe to explore"',
                 position: 'absolute',
-                ...theme.regularText,
+                ...theme.FontTypeTwo,
                 color: '#C3C8CF',
                 maxWidth: 60,
                 left: -90,
@@ -32,8 +32,8 @@ export const styles = theme => ({
         display: 'none'
     },
     root: {
-        color: '#C3C8CF',
-        fontSize: 13,
+        color: theme.general.GeneralTextColor,
+        ...theme.FontTypeTwo,
         boxShadow: 'none',
         transition: 'box-shadow 0.3s ease-in-out',
         '&:hover': {

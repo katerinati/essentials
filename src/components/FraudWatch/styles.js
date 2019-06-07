@@ -6,10 +6,10 @@ export const styles = theme => ({
 
     },
     check: {
-        ...theme.regularText,
+        ...theme.FontTypeTwo,
         textDecoration: 'none',
         textTransform: 'uppercase',
-        color: '#C3C8CF',
+        color: theme.general.GeneralTextColor,
         marginRight: 10,
         transition: 'text-shadow 0.2s ease',
         '&:hover': {

@@ -19,12 +19,13 @@ export const styles = theme => ({
         marginRight: 10
     },
     cardName: {
-        ...theme.primaryRegularText,
+        ...theme.FontTypeNine,
+        color: theme.general.SecondaryTextColor,
         margin: 0
     },
     valueItem: {
         marginLeft: 'auto',
-        ...theme.regularText,
+        ...theme.FontTypeThree,
     },
     itemValueVeryPoor: {
         color: theme.general.VeryPoorColor,
@@ -48,21 +49,25 @@ export const styles = theme => ({
     balanceTitle: {
         display: 'block',
         marginBottom: 10,
-        ...theme.secondaryRegularText
+        color: theme.general.PrimaryTextColor,
+        ...theme.FontTypeFour
     },
     balanceAmount: {
         display: 'block',
-        ...theme.primaryRegularText
+        ...theme.FontTypeNine,
+        color: theme.general.SecondaryTextColor
     },
     limitTitle: {
         display: 'block',
         marginBottom: 10,
-        ...theme.secondaryRegularText
+        ...theme.FontTypeFour,
+        color: theme.general.PrimaryTextColor,
 
     },
     limitAmount: {
         display: 'block',
-        ...theme.primaryRegularText
+        ...theme.FontTypeNine,
+        color: theme.general.SecondaryTextColor
     },
     infoWrap: {
         maxWidth: 120,

@@ -1,14 +1,13 @@
 export const styles = theme => ({
     cardChartInfo: {
-        color: theme.general.TextPrimaryColor,
-        fontSize: 18,
-        lineHeight: '24px',
-        marginBottom: 10,
-        fontWeight: 500
+        color: theme.general.SecondaryTextColor,
+        ...theme.FontTypeSix,
+        marginBottom: 10
 
     },
     cardChartDesc: {
-        color: theme.general.TextSecondaryColor,
+        color: theme.general.PrimaryTextColor,
+        ...theme.FontTypeOne
     },
     pieDesc: {
         maxWidth: 290,

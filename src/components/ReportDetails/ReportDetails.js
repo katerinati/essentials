@@ -11,7 +11,7 @@ export class ReportDetails extends Component {
 
     render () {
 
-        const { reports, classes } = this.props;
+        const { updateHeight, reports, classes } = this.props;
 
         return(
             <div className={classes.tabWrap}>
@@ -21,6 +21,7 @@ export class ReportDetails extends Component {
                                      sectionValue={report.detailValue}
                                      detailStatus={report.detailStatus}
                                      detailStatusValue={report.detailStatusValue}
+                                     updateHeight={updateHeight}
 
                         />
                     </Paper>

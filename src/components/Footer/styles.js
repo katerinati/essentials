@@ -17,7 +17,7 @@ export const styles = theme => ({
         flex: '0 0 50%',
         maxWidth: 480,
         marginLeft: 'auto',
-        lineHeight: 1.2,
+        ...theme.FontTypeOne,
         ['@media (max-width:680px)']: {
             order: 1,
             flex: '0 0 100%',
@@ -33,7 +33,8 @@ export const styles = theme => ({
             padding: 0,
             display: 'block',
             width: '50%',
-            float: 'left'
+            float: 'left',
+            ...theme.FontTypeTwo
         },
         '& img': {
             marginTop: 'auto'

@@ -1,9 +1,13 @@
 import {createMuiTheme} from '@material-ui/core/styles';
 
 const HeeboFont = "Heebo";
-const TextPrimaryColor = '#474C58';
-const TextSecondaryColor = '#A1A6AE';
+
+const GeneralTextColor = '#C3C8CF';
+const PrimaryTextColor = '#A1A6AE';
+const SecondaryTextColor = '#474C58';
+
 const SiteBackgroundColor = '#FDFDFF';
+
 const DefaultActiveColor = '#4286F5';
 const VeryPoorColor = '#F15038';
 const PoorColor = '#F97642';
@@ -12,25 +16,35 @@ const GoodColor = '#45B376';
 const ExcellentColor = '#45B376';
 
 const RegularFontWeight = 500;
-const MediumFontWeight = 400;
+const NormalFontWeight = 400;
 
 
 export const theme = createMuiTheme({
 
+    /*************************
+     * 0.     CONSTANTS      *
+     *************************/
+
     general: {
-        HeeboFont : "Heebo",
-        TextPrimaryColor : '#474C58',
-        TextSecondaryColor : '#A1A6AE',
-        SiteBackgroundColor : '#FDFDFF',
-        DefaultActiveColor : '#4286F5',
-        VeryPoorColor : '#F15038',
-        PoorColor : '#F97642',
-        FairColor : '#FEB904',
-        GoodColor : '#45B376',
-        ExcellentColor : '#45B376',
-        RegularFontWeight : 500,
-        MediumFontWeight : 400
+        HeeboFont : HeeboFont,
+        GeneralTextColor: GeneralTextColor,
+        SecondaryTextColor : SecondaryTextColor,
+        PrimaryTextColor : PrimaryTextColor,
+        SiteBackgroundColor : SiteBackgroundColor,
+        DefaultActiveColor : DefaultActiveColor,
+        VeryPoorColor : VeryPoorColor,
+        PoorColor : PoorColor,
+        FairColor : FairColor,
+        GoodColor : GoodColor,
+        ExcellentColor : ExcellentColor,
+        RegularFontWeight : RegularFontWeight,
+        NormalFontWeight : NormalFontWeight
     },
+
+    /*************************
+    * 1.     TYPOGRAPHY      *
+    *************************/
+
 
     typography: {
         useNextVariants: true,
@@ -45,81 +59,82 @@ export const theme = createMuiTheme({
             default: SiteBackgroundColor
         },
         text: {
-            primary: TextPrimaryColor,
-            secondary: TextSecondaryColor
+            primary: GeneralTextColor,
+            secondary: PrimaryTextColor
         },
+    },
+
+    FontTypeOne: {
+        fontSize: 13,
+        fontWeight: NormalFontWeight,
+        lineHeight: '16px',
+        fontFamily: HeeboFont
+    },
+    FontTypeTwo: {
+        fontSize: 13,
+        fontWeight: RegularFontWeight,
+        lineHeight: '16px',
+        fontFamily: HeeboFont
+    },
+    FontTypeThree: {
+        fontSize: 13,
+        fontWeight: RegularFontWeight,
+        lineHeight: '15px',
+        fontFamily: HeeboFont
+    },
+    FontTypeFour: {
+        fontSize: 13,
+        fontWeight: RegularFontWeight,
+        lineHeight: '18px',
+        fontFamily: HeeboFont
+    },
+    FontTypeFive: {
+        fontSize: 13,
+        fontWeight: RegularFontWeight,
+        lineHeight: '20px',
+        fontFamily: HeeboFont
+    },
+    FontTypeSix: {
+        fontSize: 18,
+        fontWeight: RegularFontWeight,
+        lineHeight: '24px',
+        fontFamily: HeeboFont
+    },
+    FontTypeSeven: {
+        fontSize: 18,
+        fontWeight: RegularFontWeight,
+        lineHeight: '24px',
+        fontFamily: HeeboFont,
+        letterSpacing: '0.1em'
+    },
+    FontTypeEight: {
+        fontSize: 15,
+        fontWeight: NormalFontWeight,
+        lineHeight: '20px',
+        fontFamily: HeeboFont,
+    },
+    FontTypeNine: {
+        fontSize: 15,
+        fontWeight: RegularFontWeight,
+        lineHeight: '20px',
+        fontFamily: HeeboFont,
     },
 
     link: {
         color: {
             primary: DefaultActiveColor,
-            secondary: TextPrimaryColor
+            secondary: SecondaryTextColor
         }
     },
 
-    tabs: {
-        indicator : {
-            backgroundColor: DefaultActiveColor
-        }
-    },
+    /*************************
+     * 2.      HELPERS       *
+     *************************/
 
     container: {
         maxWidth: 1030,
         margin: '0 auto',
         padding: '0 20px'
-    },
-
-    primaryRegularText: {
-        fontWeight: RegularFontWeight,
-        fontFamily: HeeboFont,
-        color: TextPrimaryColor,
-        fontSize: 15,
-        lineHeight: 1.3,
-    },
-
-    secondaryRegularText: {
-        fontWeight: RegularFontWeight,
-        fontFamily: HeeboFont,
-        color: TextSecondaryColor,
-        fontSize: 13,
-        lineHeight: 1.2,
-    },
-
-    secondaryMediumText: {
-        fontWeight: MediumFontWeight,
-        fontFamily: HeeboFont,
-        color: TextSecondaryColor,
-        fontSize: 13,
-        lineHeight: 1.2,
-    },
-
-    secondaryRegularTextDark: {
-        fontWeight: RegularFontWeight,
-        fontFamily: HeeboFont,
-        color: TextPrimaryColor,
-        fontSize: 13,
-        lineHeight: 1.2,
-    },
-
-    regularText : {
-        fontSize: 13,
-        fontWeight: RegularFontWeight,
-        fontFamily: HeeboFont,
-    },
-
-    highlightedText: {
-        color: TextPrimaryColor,
-        fontSize: 18,
-        fontFamily: HeeboFont,
-        fontWeight: RegularFontWeight,
-        lineHeight: 1.3
-    },
-
-    smallRegularText: {
-        fontSize: 11,
-        fontWeight: RegularFontWeight,
-        lineHeight: 1.1,
-        fontFamily: HeeboFont,
     },
 
     buttonMedium: {

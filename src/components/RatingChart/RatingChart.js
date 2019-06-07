@@ -21,11 +21,14 @@ export class RatingChart extends Component{
     }
 
     toggleFactor = (open) => event => {
+        const {updateHeight} = this.props;
+
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
             return;
         }
-
+        updateHeight();
         this.setState({open: open});
+
     };
 
     render() {
@@ -61,7 +64,7 @@ export class RatingChart extends Component{
                 </div>
 
 
-                <Collapse in={this.state.open} timeout="auto" classes={{ wrapper: classes.wrapper }} unmountOnExit>
+                <Collapse in={this.state.open} classes={{ wrapper: classes.wrapper }} unmountOnExit>
                         <FactorDetail/>
                 </Collapse>
 

@@ -7,9 +7,6 @@ export const styles = theme =>({
         },
     },
     indicator: {
-        // backgroundColor: theme.general.DefaultActiveColor,
-        // boxShadow: '0px -1px 10px rgba(66, 134, 245, 0.3)',
-        // height: 2,
         display: 'none'
     },
     root: {
@@ -21,11 +18,11 @@ export const styles = theme =>({
         },
         minWidth: 'unset',
         '&:hover': {
-            color: theme.general.TextPrimaryColor,
+            color: theme.general.SecondaryTextColor,
             opacity: 1,
         },
         '&:focus': {
-            color: theme.general.TextPrimaryColor,
+            color: theme.general.SecondaryTextColor,
         },
         position: 'relative',
         '&:before': {
@@ -72,8 +69,5 @@ export const styles = theme =>({
         '&:after': {
             width: '50%',
         }
-    },
-    qweqwe: {
-
     }
 });

@@ -1,6 +1,6 @@
 export const styles = theme => ({
     nextStep: {
-        ...theme.regularText,
+        ...theme.FontTypeFour,
         display: 'flex',
         alignItems: 'center',
         color: theme.general.DefaultActiveColor,

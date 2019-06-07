@@ -6,12 +6,13 @@ export const styles = theme => ({
     userAccountGreetings : {
         marginRight : 15,
         textTransform : 'uppercase',
-        color: '#C3C8CF',
+        color: theme.general.GeneralTextColor,
+        ...theme.FontTypeThree,
     },
     arrow: {
         fontSize: 18,
-        color: '#C3C8CF',
-        fontWeight: 500,
+        color: theme.general.GeneralTextColor,
+        fontWeight: theme.general.RegularFontWeight,
         marginLeft: 5
     }
 });

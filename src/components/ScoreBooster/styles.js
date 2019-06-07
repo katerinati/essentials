@@ -5,7 +5,8 @@ export const styles = theme => ({
         marginBottom: 30
     },
     boosterTitle: {
-        ...theme.secondaryRegularTextDark,
+        ...theme.FontTypeFive,
+        color: theme.general.SecondaryTextColor,
         textTransform: 'uppercase',
         marginBottom: 2
     },
@@ -15,7 +16,7 @@ export const styles = theme => ({
         top: 0
     },
     boosterScore: {
-        ...theme.secondaryRegularText,
+        ...theme.FontTypeFive,
         color: '#45B376',
         textTransform: 'uppercase'
     }

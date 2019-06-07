@@ -19,9 +19,9 @@ export const styles = theme => ({
         display: 'none'
     },
     mainTabItem: {
-        color: '#C3C8CF',
+        color: theme.general.GeneralTextColor,
         minWidth: 150,
-        ...theme.regularText,
+        ...theme.FontTypeFive,
         position: 'relative',
         '&:before': {
             content: '""',
@@ -46,11 +46,11 @@ export const styles = theme => ({
             boxShadow: '0px -1px 5px rgba(66, 134, 245, 0.3)'
         },
         '&:hover': {
-            color: theme.general.TextPrimaryColor,
+            color: theme.general.SecondaryTextColor,
             opacity: 1,
         },
         '&:focus': {
-            color: theme.general.TextPrimaryColor,
+            color: theme.general.SecondaryTextColor,
         },
         '& > span:last-child': {
             display: 'none'
@@ -86,6 +86,7 @@ export const styles = theme => ({
         }
     },
     currentPage: {
-        ...theme.primaryRegularText
+        ...theme.FontTypeTwo,
+        color: theme.general.SecondaryTextColor
     }
 });
