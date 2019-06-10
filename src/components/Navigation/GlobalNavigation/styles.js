@@ -54,6 +54,9 @@ export const styles = theme => ({
         },
         '& > span:last-child': {
             display: 'none'
+        },
+        ['@media (max-width:680px)']: {
+            minWidth: 90
         }
     },
     selected: {

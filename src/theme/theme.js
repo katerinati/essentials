@@ -11,6 +11,7 @@ const SiteBackgroundColor = '#FDFDFF';
 const DefaultActiveColor = '#4286F5';
 const HoverActiveColor = '#76A7F7';
 const SvgFocusColor = '#A3CEF1';
+const WarningColor = '#FF5C5C';
 
 const VeryPoorColor = '#F15038';
 const PoorColor = '#F97642';
@@ -42,6 +43,7 @@ export const theme = createMuiTheme({
         FairColor : FairColor,
         GoodColor : GoodColor,
         ExcellentColor : ExcellentColor,
+        WarningColor: WarningColor,
         RegularFontWeight : RegularFontWeight,
         NormalFontWeight : NormalFontWeight
     },
@@ -152,10 +154,19 @@ export const theme = createMuiTheme({
         textTransform: 'uppercase',
         maxWidth: 160,
         width: '100%',
-        transition: 'opacity 0.2s ease-out',
+        transition: 'all 0.2s ease-out',
+        border: `2px solid ${DefaultActiveColor}`,
         '&:hover':{
-            backgroundColor: DefaultActiveColor,
-            opacity: 0.8
+            backgroundColor: '#5E98F6',
+            boxShadow: '0px 10px 15px rgba(66, 134, 245, 0.35)',
+            borderColor: '#5E98F6',
+        },
+        '&:active, &:visited':{
+            backgroundColor: '#5E98F6',
+            boxShadow: 'none'
+        },
+        '&:focus': {
+            borderColor: '#76A7F7',
         },
         ['@media (max-width:460px)']: {
             maxWidth: 200,

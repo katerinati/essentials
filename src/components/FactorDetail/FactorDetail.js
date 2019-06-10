@@ -15,7 +15,7 @@ export class FactorDetail extends Component{
 
         this.state = {
             slide : 0,
-            total: props.factorDetails.length
+            total: props.factorDetails.details.length
         }
     }
 
@@ -23,7 +23,7 @@ export class FactorDetail extends Component{
         const { factorDetails, classes } = this.props;
         const { slide } = this.state;
 
-        return factorDetails.map( (data, i) =>
+        return factorDetails.details.map( (data, i) =>
             <span key={i} className={ClassNames(classes.slideItem,{
                 [classes.activeItem]: ( i == slide),
             })}></span>
@@ -53,9 +53,8 @@ export class FactorDetail extends Component{
     renderFactorData = () => {
         const { factorDetails, classes } = this.props;
 
-        return factorDetails.map( (factorDetail, i) =>
+        return factorDetails.details.map( (factorDetail, i) =>
             <div className={classes.singleFactorWrap} key={i}>
-                <Typography align="left" className={classes.singleFactorText}>{factorDetail.text}</Typography>
                 <div className={classes.singleFactorDesc}>
                     <div className={classes.factorBooster}>
                         <ScoreBooster score={factorDetail.points}/>
@@ -87,7 +86,9 @@ export class FactorDetail extends Component{
         const { slide, total } = this.state;
 
         return (
-            <div>
+            <div className={classes.factorWrap}>
+                <Typography align="left" className={classes.singleFactorText}>{factorDetails.overview}</Typography>
+
                 <SwipeableViews index={slide} onChangeIndex={this.changeTab} enableMouseEvents>
                     { this.renderFactorData(slide) }
                 </SwipeableViews>

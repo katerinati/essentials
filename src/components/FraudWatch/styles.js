@@ -9,13 +9,13 @@ export const styles = theme => ({
             backgroundColor: '#E4E6EE',
             borderRadius: '50%'
         },
-        '&:focus svg, &:active svg': {
+        '&:focus svg, &:active svg, &:hover svg': {
             fill: theme.general.DefaultActiveColor,
             backgroundColor: theme.general.SvgFocusColor
         },
         '&:hover a': {
-            color: theme.general.HoverActiveColor,
-        },
+            color: theme.general.SecondaryTextColor,
+        }
     },
     check: {
         ...theme.FontTypeTwo,

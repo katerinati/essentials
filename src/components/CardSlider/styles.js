@@ -113,7 +113,7 @@ export const styles = theme => ({
         color: theme.general.PrimaryTextColor,
         transition: 'color 0.2s ease',
         '&:hover, &:focus, &:active' : {
-            color: theme.general.HoverActiveColor,
+            color: 'transparent',
             cursor: 'pointer'
         },
         '& svg': {
@@ -122,10 +122,7 @@ export const styles = theme => ({
             backgroundColor: 'transparent',
             borderRadius: '50%'
         },
-        '&:hover svg': {
-            fill: theme.general.HoverActiveColor,
-        },
-        '&:focus svg, &:active svg': {
+        '&:focus svg, &:active svg, &:hover svg': {
             fill: theme.general.DefaultActiveColor,
             backgroundColor: theme.general.SvgFocusColor
         },

@@ -4,92 +4,104 @@ export const reports = [
         'detailValue' : '24%',
         'detailStatus' : 'Good',
         'detailStatusValue' : '69',
-        'factorDetails' : [
-            {
-                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
-                'points' : '+46',
-                'reportedBalance' : '£11,343'
-            },
-            {
-                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
-                'points' : '+46',
-                'reportedBalance' : '£11,343'
-            },
-            {
-                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
-                'points' : '+46',
-                'reportedBalance' : '£11,343'
-            }
-        ]
+        'factorDetails' : {
+            'overview': 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+            'details': [
+                {
+                    'text': 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                    'points': '+46',
+                    'reportedBalance': '£11,343'
+                },
+                {
+                    'text': 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                    'points': '+46',
+                    'reportedBalance': '£11,343'
+                },
+                {
+                    'text': 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                    'points': '+46',
+                    'reportedBalance': '£11,343'
+                }
+            ]
+        }
     },
     {
         'detailTile' : 'Total credit limit',
         'detailValue' : '£ 69,360',
         'detailStatus' : 'Fair',
         'detailStatusValue' : '49',
-        'factorDetails' : [
-            {
-                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
-                'points' : '+46',
-                'reportedBalance' : '£11,343'
-            },
-            {
-                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
-                'points' : '+46',
-                'reportedBalance' : '£11,343'
-            },
-            {
-                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
-                'points' : '+46',
-                'reportedBalance' : '£11,343'
-            }
-        ]
+        'factorDetails' : {
+            'overview': 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+            'details': [
+                {
+                    'text': 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                    'points': '+46',
+                    'reportedBalance': '£11,343'
+                },
+                {
+                    'text': 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                    'points': '+46',
+                    'reportedBalance': '£11,343'
+                },
+                {
+                    'text': 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                    'points': '+46',
+                    'reportedBalance': '£11,343'
+                }
+            ]
+        }
     },
     {
         'detailTile' : 'Cash withdrawals',
         'detailValue' : 'None',
         'detailStatus' : 'Excellent',
         'detailStatusValue' : '89',
-        'factorDetails' : [
-            {
-                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
-                'points' : '+46',
-                'reportedBalance' : '£11,343'
-            },
-            {
-                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
-                'points' : '+46',
-                'reportedBalance' : '£11,343'
-            },
-            {
-                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
-                'points' : '+46',
-                'reportedBalance' : '£11,343'
-            }
-        ]
+        'factorDetails' : {
+            'overview': 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+            'details': [
+                {
+                    'text': 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                    'points': '+46',
+                    'reportedBalance': '£11,343'
+                },
+                {
+                    'text': 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                    'points': '+46',
+                    'reportedBalance': '£11,343'
+                },
+                {
+                    'text': 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                    'points': '+46',
+                    'reportedBalance': '£11,343'
+                }
+            ]
+        }
     },
     {
         'detailTile' : 'Exceeded limit',
         'detailValue' : '5',
         'detailStatus' : 'Poor',
         'detailStatusValue' : '29',
-        'factorDetails' : [
-            {
-                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
-                'points' : '+46',
-                'reportedBalance' : '£11,343'
-            },
-            {
-                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
-                'points' : '+46',
-                'reportedBalance' : '£11,343'
-            },
-            {
-                'text' : 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
-                'points' : '+46',
-                'reportedBalance' : '£11,343'
-            }
-        ]
+        'factorDetails' : {
+            'overview': 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+            'details': [
+                {
+                    'text': 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                    'points': '+46',
+                    'reportedBalance': '£11,343'
+                },
+                {
+                    'text': 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                    'points': '+46',
+                    'reportedBalance': '£11,343'
+                },
+                {
+                    'text': 'Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text. Example text.',
+                    'points': '+46',
+                    'reportedBalance': '£11,343'
+                }
+            ]
+        }
     },
 ];
 

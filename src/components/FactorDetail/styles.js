@@ -1,5 +1,5 @@
 export const styles = theme =>({
-    singleFactorWrap:{
+    factorWrap:{
         padding: '32px 15px',
         maxWidth: 500,
         display: 'block',
@@ -29,9 +29,9 @@ export const styles = theme =>({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'flex-start',
-        maxWidth: 500,
-        margin: '10px auto 0',
-        padding: '0 15px 32px 15px',
+        // maxWidth: 500,
+        margin: '0 auto',
+        // padding: '0 15px 32px 15px',
         ['@media (max-width:460px)']: {
             marginTop: 25,
             justifyContent: 'center',
@@ -114,7 +114,8 @@ export const styles = theme =>({
     factorActions: {
         display: 'flex',
         flexWrap: 'wrap',
-        justifyContent: 'flex-start'
+        justifyContent: 'flex-start',
+        paddingBottom: 42
     },
     stepNav: {
         alignItems: 'center',

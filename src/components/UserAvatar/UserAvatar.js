@@ -10,10 +10,10 @@ export class UserAvatar extends Component{
 
     render () {
 
-        // const { classes } = this.props;
+        const { className } = this.props;
 
         return (
-            <Avatar alt="Remy Sharp" src={UserAvatarDefaultImg} />
+            <Avatar alt="Remy Sharp" src={UserAvatarDefaultImg} className={className} />
         );
     };
 }
