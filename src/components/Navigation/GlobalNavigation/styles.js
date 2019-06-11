@@ -9,7 +9,7 @@ export const styles = theme => ({
         alignItems: 'center',
         padding: '0 20px',
         ['@media (max-width:600px)']: {
-            padding: 20
+            padding: '10px 20px'
         }
     },
     menuWrap : {

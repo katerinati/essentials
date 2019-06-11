@@ -112,7 +112,11 @@ export const styles = theme => ({
         ...theme.FontTypeTwo,
         color: theme.general.PrimaryTextColor,
         transition: 'color 0.2s ease',
-        '&:hover, &:focus, &:active' : {
+        '&:hover' :{
+            color: theme.general.DefaultActiveColor,
+            cursor: 'pointer'
+        },
+        '&:focus, &:active' : {
             color: 'transparent',
             cursor: 'pointer'
         },
@@ -122,9 +126,13 @@ export const styles = theme => ({
             backgroundColor: 'transparent',
             borderRadius: '50%'
         },
-        '&:focus svg, &:active svg, &:hover svg': {
+        '&:focus svg, &:active svg': {
             fill: theme.general.DefaultActiveColor,
             backgroundColor: theme.general.SvgFocusColor
+        },
+        '&:hover svg': {
+            fill: theme.general.DefaultActiveColor,
+            cursor: 'pointer'
         },
         ['@media (max-width:460px)']: {
             display: 'none'

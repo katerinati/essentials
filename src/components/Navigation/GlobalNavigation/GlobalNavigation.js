@@ -6,10 +6,17 @@ import Tab from '@material-ui/core/Tab';
 import Logo from "../../Logo";
 import AccountNavigation from "../../AccountNavigation";
 import MobileMenu from "../../MobileMenu";
+import {withRouter} from 'react-router-dom';
 
 import { unstable_useMediaQuery as useMediaQuery } from '@material-ui/core/useMediaQuery'
 
-const GlobalNavigation = ({classes}) => {
+const GlobalNavigation = ({classes , history}) => {
+
+    const links = {
+        0:'/',
+        1:'/offers',
+        2:'/checklist'
+    };
 
     const [open, setOpen] = useState(false);
 
@@ -17,6 +24,7 @@ const GlobalNavigation = ({classes}) => {
 
     const handleChange = useCallback((event, value) => {
         setOpen(value);
+        history.push(links[value]);
     }, [setOpen]);
 
     return (
@@ -62,4 +70,4 @@ GlobalNavigation.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default GlobalNavigation;
+export default withRouter(GlobalNavigation);

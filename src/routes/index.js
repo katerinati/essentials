@@ -12,7 +12,10 @@ class AppRouter extends Component {
         return (
             <Router>
                 <Switch>
-                    <AppLayoutRoute exact={true} path={'/'} component={ Home }/>
+                    <AppLayoutRoute exact={true} path={'/(:sections)?'} component={ Home }/>
+                    <AppLayoutRoute exact={true} path={'/home/lender-report'} component={ Home }/>
+                    <AppLayoutRoute exact={true} path={'/offers'} component={ Home }/>
+                    <AppLayoutRoute exact={true} path={'/checklist'} component={ Home }/>
                 </Switch>
             </Router>
         );
