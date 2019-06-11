@@ -34,8 +34,8 @@ export class MobileMenu extends Component {
 
         return(
             <div>
-                <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="Menu" onClick={this.toggleDrawer(true)}>
-                    <MenuIcon />
+                <IconButton edge="start" color="inherit" aria-label="Menu" onClick={this.toggleDrawer(true)}>
+                    <MenuIcon className={classes.menuButton} />
                 </IconButton>
 
                 <Drawer anchor="right" open={this.state.open} onClose={this.toggleDrawer(false)} >

@@ -18,5 +18,17 @@ export const styles = theme => ({
         ['@media (max-width:1024px)']: {
             overflowX: 'scroll',
         },
+        ['@media (max-width:375px)']: {
+            overflowX: 'hidden',
+        },
+    },
+    lineChart: {
+        '& > svg': {
+            ['@media (max-width:640px)']: {
+                maxWidth: '100%',
+                width: '100%!important'
+            }
+        }
     }
+
 });

@@ -18,7 +18,10 @@ export const styles = theme => ({
         marginTop: 30,
         '& > svg': {
             display: 'block',
-            margin: '0 auto'
+            margin: '0 auto',
+            ['@media (max-width:460px)']: {
+                maxHeight: 160
+            },
         }
 
     }

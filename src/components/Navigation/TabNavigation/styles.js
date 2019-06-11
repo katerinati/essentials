@@ -7,6 +7,8 @@ export const styles = theme => ({
             marginLeft: 90,
             overflow: 'visible',
             position: 'relative',
+            marginRight: -20,
+
             '&:before': {
                 content: '"Swipe to explore"',
                 position: 'absolute',
@@ -15,6 +17,9 @@ export const styles = theme => ({
                 maxWidth: 60,
                 left: -90,
                 top: 'calc(50% - 16px)'
+            },
+            '& > div > div': {
+                overflowX: 'scroll'
             }
         }
 
@@ -24,10 +29,15 @@ export const styles = theme => ({
 
         justifyContent: 'space-between',
         ['@media (max-width:740px)']: {
-            overflowX: 'scroll',
+            position:' relative',
+            display:' flex',
+            flex:' 1 0 auto',
+            transform:' none',
+            willChange:' transform',
             minHeight: 100,
         },
     },
+
     indicator: {
         display: 'none'
     },

@@ -1,4 +1,4 @@
-import { Chart } from "./Chart";
+import  Chart from "./Chart";
 import { styles } from "./style";
 import { withStyles } from '@material-ui/core/styles'
 

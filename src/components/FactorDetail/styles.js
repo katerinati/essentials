@@ -115,7 +115,10 @@ export const styles = theme =>({
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'flex-start',
-        paddingBottom: 42
+        paddingBottom: 42,
+        ['@media (max-width:640px)']: {
+            paddingBottom: 0
+        }
     },
     stepNav: {
         alignItems: 'center',

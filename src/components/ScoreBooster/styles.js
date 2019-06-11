@@ -3,6 +3,9 @@ export const styles = theme => ({
         paddingLeft: 45,
         position: 'relative',
         marginBottom: 30,
+        ['@media (max-width:640px)']: {
+            paddingLeft: 30
+        },
         ['@media (max-width:460px)']: {
             marginBottom: 18
         }
@@ -16,7 +19,10 @@ export const styles = theme => ({
     boosterImg: {
         position: 'absolute',
         left: 15,
-        top: 0
+        top: 0,
+        ['@media (max-width:640px)']: {
+            left: 0
+        }
     },
     boosterScore: {
         ...theme.FontTypeFive,
