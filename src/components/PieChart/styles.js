@@ -16,6 +16,12 @@ export const styles = theme => ({
     },
     PieChart: {
         marginTop: 30,
+    },
+    pieChartWrap: {
+        maxWidth: 240,
+        display: 'block',
+        position: 'relative',
+        margin: '0 auto',
         '& > svg': {
             display: 'block',
             margin: '0 auto',
@@ -23,7 +29,16 @@ export const styles = theme => ({
                 maxHeight: 160
             },
         }
-
+    },
+    progressTitle: {
+        ...theme.FontTypeSix,
+        color: theme.general.SecondaryTextColor,
+        position: 'absolute',
+        top: 115,
+        left: 100,
+        ['@media (max-width:460px)']: {
+            top: 70
+        },
     }
 
 });

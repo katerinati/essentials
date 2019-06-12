@@ -118,7 +118,6 @@ const Chart = ({classes , chartTitle}) => {
                             textAlign: 'center'
                         }}
                         isAnimationActive={false}
-                        offset={30}
                     />
                     <CartesianGrid vertical={false} strokeDasharray="8 9" />
                     <Line

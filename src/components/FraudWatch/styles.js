@@ -3,6 +3,7 @@ export const styles = theme => ({
         marginLeft: 'auto',
         display: 'flex',
         alignItems: 'center',
+
         '& svg': {
             transition: 'all 0.2s ease',
             marginLeft: 5,
@@ -15,6 +16,9 @@ export const styles = theme => ({
         },
         '&:hover a': {
             color: theme.general.SecondaryTextColor,
+        },
+        ['@media (max-width:740px)']: {
+            borderBottom: '1px solid #E4E6EE',
         }
     },
     check: {

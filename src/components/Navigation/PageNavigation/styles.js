@@ -8,7 +8,16 @@ export const styles = theme =>({
         minHeight: 75,
         borderBottom: '1px solid #E4E6EE',
         ['@media (max-width:740px)']: {
-            overflowX: 'scroll'
+            // overflowX: 'scroll'
+            borderBottom: 0,
+            flex: '1 0 auto',
+            display: 'flex',
+            position: 'relative',
+            transform: 'none',
+            willChange: 'transform',
+            '& > div > div': {
+                overflowX: 'scroll'
+            }
         },
     },
     indicator: {
@@ -16,10 +25,18 @@ export const styles = theme =>({
     },
     root: {
         color: '#C3C8CF',
-        margin: '0 12px',
+        padding: '0 12px',
         overflow: 'visible',
         '&:first-child': {
-            marginLeft: 0
+            padding: 0,
+            '&$selected': {
+                '&:before, &:after': {
+                    width: '50%',
+                }
+            },
+        },
+        ['@media (max-width:740px)']: {
+            borderBottom: '2px solid #E4E6EE',
         },
         minWidth: 'unset',
         '&:hover': {
@@ -38,11 +55,8 @@ export const styles = theme =>({
             left: '50%',
             height: 2,
             background: theme.general.DefaultActiveColor,
-            bottom: -2,
+            bottom: -1,
             boxShadow: '0px -1px 5px rgba(66, 134, 245, 0.3)',
-            ['@media (max-width:460px)']: {
-                bottom: 0
-            },
         },
         '&:after': {
             content: '""',
@@ -52,22 +66,19 @@ export const styles = theme =>({
             right: '50%',
             height: 2,
             background: theme.general.DefaultActiveColor,
-            bottom: -2,
+            bottom: -1,
             boxShadow: '0px -1px 5px rgba(66, 134, 245, 0.3)',
-            ['@media (max-width:460px)']: {
-                bottom: 0
-            },
         },
         '& > span:last-child': {
             display: 'none'
         },
 
     },
-    wrapHandle: {
-      '& > div > div': {
-          overflow: 'visible'
-      }
-    },
+    // wrapHandle: {
+    //   '& > div > div': {
+    //       overflow: 'visible'
+    //   }
+    // },
     tabLabel: {
         '& > span': {
             padding: 0
@@ -75,11 +86,8 @@ export const styles = theme =>({
         fontSize: 13
     },
     selected: {
-        '&:before': {
-            width: '50%',
+        '&:before, &:after': {
+            width: 'calc(50% - 12px)',
         },
-        '&:after': {
-            width: '50%',
-        }
     }
 });

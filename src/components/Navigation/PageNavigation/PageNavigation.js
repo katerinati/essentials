@@ -3,12 +3,14 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import FraudWatch from '../../FraudWatch';
 
-const PageTabs = [
-    {label:"Essentials", url:'essentials'},
-    {label:"Lender report", url:'lender-report'},
-    {label:"Credit report", url:'credit-report'},
-    {label:"Score boosters", url:'score-boosters'}
-];
+// const PageTabs = [
+//     {label:"Essentials", url:'essentials'},
+//     {label:"Lender report", url:'lender-report'},
+//     {label:"Credit report", url:'credit-report'},
+//     {label:"Score boosters", url:'score-boosters'}
+// ];
+
+const PageTabs = [ 'Essentials', 'Lender report', 'Credit report', 'Score boosters' ];
 
 export class PageNavigation extends Component {
 
@@ -21,10 +23,13 @@ export class PageNavigation extends Component {
     };
 
     handleChange = (event, value) => {
-        const {history , match} = this.props;
-        this.setState({value},()=>{
-            history.push(PageTabs[value].url)
-        });
+        // const {history , match} = this.props;
+        //
+        // this.setState({value},()=>{
+        //     history.push(PageTabs[value].url)
+        // });
+
+        this.setState({value});
     };
 
     render() {
@@ -42,15 +47,17 @@ export class PageNavigation extends Component {
                     }}
                     className={classes.wrapHandle}
                 >
-                    { PageTabs.map( (tab, i) =>
-                        <Tab classes={{
-                            selected: classes.selected,
-                            wrapper: classes.tabLabel}}
-                             className={classes.root}
-                             label={tab.label}
-                             key={i}
-                        />)
-                    }
+                    {/*{ PageTabs.map( (tab, i) =>*/}
+                        {/*<Tab classes={{*/}
+                            {/*selected: classes.selected,*/}
+                            {/*wrapper: classes.tabLabel}}*/}
+                             {/*className={classes.root}*/}
+                             {/*label={tab.label}*/}
+                             {/*key={i}*/}
+                        {/*/>)*/}
+                    {/*}*/}
+
+                    { PageTabs.map( (tab, i) => <Tab classes={{selected: classes.selected, wrapper: classes.tabLabel}} className={classes.root} label={tab} key={i} />) }
                     <FraudWatch />
                 </Tabs>
             </div>
